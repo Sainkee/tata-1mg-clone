@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navLink li:hover{
+    color: #ff6e61;
+    
+}
+.navLink li{
+    padding: 0% 1em;
+}
+.navLink li a{
+    text-transform: capitalize;
+}
