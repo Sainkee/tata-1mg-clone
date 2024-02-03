@@ -33,6 +33,7 @@
 
 } 
 
+
 .mega-menu ul li{
     text-transform: capitalize;
     padding-left: 1em;
@@ -43,4 +44,7 @@
 .mega-menu  ul:not(:first-child) {
     border-left: 1px solid rgba(193, 192, 192, 0.618);
 
+}
+.megaDropDown ul li div a{
+    font-size: 0.9em;;
 }
