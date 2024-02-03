@@ -9,9 +9,9 @@
     </title>
 
     <!-- tailwind output style sheet -->
-   
-    <link rel="stylesheet" href="output.css"/>
-    <link rel="stylesheet" href="../src/input.css"/>
+
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="../src/input.css" />
 
     <!-- nav icon -->
     <link
@@ -19,7 +19,6 @@
       href="landing page/fav icon.jpeg"
       type="image/x-icon"
     />
-  
 
     <!-- font-awesome  -->
     <script
@@ -62,15 +61,11 @@
                 ></div>
 
                 <!-- Layer 3: Text-Centered Rectangle -->
-                <div
-                  class="relative h-full w-full bg-rectangle-color text-center text-white flex items-center justify-center rounded-md"
-                  style="
-                    background-color: hsl(5, 100%, 69%);
-                    animation-delay: 0s;
-                  "
+                <span
+                  class="relative bg-primary delay-0 h-full w-full bg-rectangle-color text-center text-white flex items-center justify-center rounded-md"
                 >
                   SAFE
-                </div>
+                </span>
               </div>
             </a>
           </li>
@@ -88,8 +83,7 @@
               Care Plan
 
               <span
-                class="text-white px-2 py-1 ml-1 rounded-md space-x-2"
-                style="background-color: hsl(5, 100%, 69%)"
+                class="text-white px-2 py-1 ml-1 rounded-md space-x-2 bg-primary"
                 >SAVE MORE</span
               >
             </a>
@@ -103,18 +97,41 @@
       </div>
       <a href="">Need Help?</a>
     </nav>
+    <!-- nav end -->
+
     <div>
-      <div class="search-container  flex items-center p-4">
-        <div class="bg-slate-300 flex items-center ">
-         <div class="flex items-center ">
-          <i class="fa-solid fa-location-dot"></i>
-          <input type="text" name="" id="" placeholder="Kolkata" class=" p-2 bg-slate-500">
-         </div>
-          <i class="fa fa-location"></i>
+      <div
+        class="search-container flex items-center p-4 justify-between w-full"
+      >
+        <div class="flex items-center gap-2 w-[70%]">
+          <div class="bg-slate-300 flex items-center justify-between px-4 min-w-[20%] gap-x-2">
+            <div class="flex items-center  ">
+              <i class="fa-solid fa-location-dot"></i>
+              <label for="cities"></label>
+              <select id="cities" name="cities" class="px-2 py-1 bg-slate-300 ">
+                <option value="kolkata">Kolkata</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <!-- Add more cities as needed -->
+              </select>
+            </div>
+            <i class="fa fa-location"></i>
+          </div>
+          <input
+            type="text"
+            class="search-input px-2 py-1 bg-slate-300 min-w-[60%] focus:outline-none "
+            placeholder="Search for Tests (CBC,MRI,etc...)"
+          />
+          <div class="search-icon bg-slate-300 px-2 py-1 -translate-x-10 focus:outline-none">
+            <i class="fa fa-search bg-slate-300"></i>
+          </div>
         </div>
-        <input type="text" class="search-input p-2 bg-slate-500 border-2  w-full" placeholder="Search..." />
-        <div class="search-icon p-2 bg-slate-500">
-          <i class="fa fa-search"></i>
+        <div class="flex items-center gap-2 ml-2">
+          <i class="fa-solid fa-bolt" style="color: #b197fc"></i>
+          <span class="text-wrap">QUICK BUY! Get 15% off on medicines*</span>
+          <button class="bg-primary px-4 py-2 rounded-md text-white">
+            Quick order
+          </button>
         </div>
       </div>
     </div>

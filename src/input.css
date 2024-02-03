@@ -12,3 +12,7 @@
 .navLink li a{
     text-transform: capitalize;
 }
+.navLink span{
+    color: white;
+}
+
