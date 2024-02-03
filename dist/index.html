@@ -99,16 +99,22 @@
     </nav>
     <!-- nav end -->
 
-    <div>
+    <div class="border-b-2">
       <div
         class="search-container flex items-center p-4 justify-between w-full"
       >
         <div class="flex items-center gap-2 w-[70%]">
-          <div class="bg-slate-300 flex items-center justify-between px-4 min-w-[20%] gap-x-2">
-            <div class="flex items-center  ">
+          <div
+            class="bg-slate-300 flex items-center justify-between px-4 min-w-[20%] gap-x-2"
+          >
+            <div class="flex items-center">
               <i class="fa-solid fa-location-dot"></i>
               <label for="cities"></label>
-              <select id="cities" name="cities" class="px-2 py-1 bg-slate-300 ">
+              <select
+                id="cities"
+                name="cities"
+                class="px-2 py-1 bg-slate-300 min-w-full focus:outline-none"
+              >
                 <option value="kolkata">Kolkata</option>
                 <option value="mumbai">Mumbai</option>
                 <option value="delhi">Delhi</option>
@@ -119,11 +125,13 @@
           </div>
           <input
             type="text"
-            class="search-input px-2 py-1 bg-slate-300 min-w-[60%] focus:outline-none "
+            class="search-input px-2 py-1 bg-slate-300 focus:outline-none min-w-[30%] w-full"
             placeholder="Search for Tests (CBC,MRI,etc...)"
           />
-          <div class="search-icon bg-slate-300 px-2 py-1 -translate-x-10 focus:outline-none">
-            <i class="fa fa-search bg-slate-300"></i>
+          <div class="search-icon">
+            <i
+              class="fa fa-search bg-slate-300 px-2 py-1 -translate-x-10 focus:outline-none"
+            ></i>
           </div>
         </div>
         <div class="flex items-center gap-2 ml-2">
@@ -135,5 +143,65 @@
         </div>
       </div>
     </div>
+    <!-- searchbar end -->
+
+    <section class="megaDropDown">
+      <ul class="flex justify-between items-center">
+        <li class="list1">
+          <div class="flex justify-evenly items-center relative megaMenu1">
+            <a class="hover:text-primary" href="">Health Resource Center</a>
+            <i class="fa fa-angle-down drop hover:text-primary"></i>
+          </div>
+
+          <div class="mega-menu absolute bg-slate-300">
+            <div class="flex justify-center">
+              <div class="menu-column p-4">
+                <ul class="font-semibold text-[2px] cursor-pointer">
+                  <li><a class="hover:text-primary" ="#">All Diseases</a></li>
+                  <li><a class="hover:text-primary" ="#">All Medicine</a></li>
+                  <li>
+                    <a class="hover:text-primary" ="#"
+                      >Medicines By Therapeutic classes</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list1">
+          <div class="flex justify-evenly items-center relative megaMenu1">
+            <a class="hover:text-primary" href="">Vitamin & Nutrition</a>
+            <i class="fa fa-angle-down drop hover:text-primary"></i>
+          </div>
+
+          <div class="mega-menu absolute bg-slate-300">
+            <div class="flex justify-center">
+              <div class="menu-column p-4">
+                <ul class="font-semibold text-[2px] cursor-pointer">
+                  <h4>Vitamin & Supplements</h4>
+                  <li><a class="hover:text-primary capitalize" ="#">Multivitamins</a></li>
+                  <li><a class="hover:text-primary capitalize" ="#">vitamin c</a></li>
+                  <li><a class="hover:text-primary capitalize" ="#">vitamin D3</a></li>
+                 
+                 
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        
+        <li>
+          <div class="flex justify-evenly items-center">
+            <a class="hover:text-primary" href="">Personal Care</a>
+            <i class="fa fa-angle-down drop hover:text-primary"></i>
+          </div>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
