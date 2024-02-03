@@ -30,4 +30,6 @@
 
 } 
 
-
+.mega-menu ul li {
+    text-transform: capitalize;
+}
