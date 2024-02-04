@@ -53,3 +53,13 @@
 .megaDropDown ul li div a{
     font-size: 0.9em;;
 }
+.paragraph div h4 ,h6{
+   font-weight: 500;
+
+}
+.paragraph div p {
+   color: rgba(107, 104, 104, 0.923);
+}
+.paragraph div p ,h6{
+    padding: .5em 0;
+}
