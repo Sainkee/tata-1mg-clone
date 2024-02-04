@@ -2,64 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-.navLink li:hover{
-    color: #ff6e61;
-    
+.navLink li:hover {
+  color: #ff6e61;
 }
-.navLink li{
-    padding: 0% 1em;
+.navLink li {
+  padding: 0% 1em;
 }
-.navLink li a{
-    text-transform: uppercase;
-    font-weight: 700;
+.navLink li a {
+  text-transform: uppercase;
+  font-weight: 700;
 }
-.navLink span{
-    color: white;
+.navLink span {
+  color: white;
 }
-.megaDropDown i{
-    padding-top: 5px;
-    margin-left: 2px;
+.megaDropDown i {
+  padding-top: 5px;
+  margin-left: 2px;
 }
-.mega-menu{
-    display: none;
-    font-size: 0.8rem;
-   
+.mega-menu {
+  display: none;
+  font-size: 0.8rem;
 }
 
-.list1:hover{
-    .mega-menu{
-        display: block;
-    } 
-
-} 
-
-.mega-menu  {
-    background-color: white;
-    border-radius: 4px;
-    z-index: 1;
-
-}
-.mega-menu ul li{
-    text-transform: capitalize;
-    padding-left: 1em;
-    margin-bottom: 0.5em;
-    
+.list1:hover {
+  .mega-menu {
+    display: block;
+  }
 }
 
-.mega-menu  ul:not(:first-child) {
-    border-left: 1px solid rgba(193, 192, 192, 0.618);
-
+.mega-menu {
+  background-color: white;
+  border-radius: 4px;
+  z-index: 1;
 }
-.megaDropDown ul li div a{
-    font-size: 0.9em;;
+.mega-menu ul li {
+  text-transform: capitalize;
+  padding-left: 1em;
+  margin-bottom: 0.5em;
 }
-.paragraph div h4 ,h6{
-   font-weight: 500;
 
+.mega-menu ul:not(:first-child) {
+  border-left: 1px solid rgba(193, 192, 192, 0.618);
+}
+.megaDropDown ul li div a {
+  font-size: 0.9em;
+}
+.paragraph div h4,
+h6 {
+  font-weight: 500;
 }
 .paragraph div p {
-   color: rgba(107, 104, 104, 0.923);
+  color: rgba(107, 104, 104, 0.923);
 }
-.paragraph div p ,h6{
-    padding: .5em 0;
+.paragraph div p,
+h6 {
+  padding: 0.5em 0;
+}
+
+.footerLinks {
+  padding: 2em 4em;
+}
+.footerLinks h5 {
+  font-size: larger;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+.footerLinks a {
+  color: rgba(114, 113, 113, 0.903);
+  font-size: 0.8rem;
 }
