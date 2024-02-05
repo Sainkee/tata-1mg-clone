@@ -586,6 +586,10 @@ video {
   height: 2rem;
 }
 
+.h-\[190px\] {
+  height: 190px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1008,6 +1012,10 @@ h6 {
 
 #hide {
   display: none;
+}
+
+.sideimg {
+  height: 190px;
 }
 
 .hover\:text-primary:hover {
