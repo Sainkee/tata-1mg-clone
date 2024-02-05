@@ -642,6 +642,18 @@ video {
   width: 6rem;
 }
 
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .min-w-6 {
   min-width: 1.5rem;
 }
