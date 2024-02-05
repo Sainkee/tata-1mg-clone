@@ -1805,7 +1805,7 @@
           </div>
         </div>
       </div>
-      <div class="flex footerLinks justify-around bg-beige shadow-lg">
+      <div class="flex footerLinks justify-around bg-beige">
         <div class="">
           <h5 class="">Know Us</h5>
           <ul>
@@ -1908,6 +1908,119 @@
           </ul>
         </div> -->
       </div>
+      <div class="border-b-2 w-[90%] mx-auto py-2 bg-beige"></div>
+      <div class="mx-auto py-2 bg-beige"></div>
+      <div class="py-10 bg-beige">
+        <div class="w-[80%] flex mx-auto justify-between">
+          <div class="flex md:flex-row flex-col items-center">
+            <div class="flex justify-center min-w-[33%] w-full">
+              <img
+                class=""
+                src="landingpage/secure-rebrand_x6f8yq.svg"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <h4 class="font-bold text-center text-3xl">Reliable</h4>
+              <p class="text-sm text-gray-500 my-2">
+                All products displayed on Tata 1mg are procured from verified
+                and licensed pharmacies. All labs listed on the platform are
+                accredited
+              </p>
+            </div>
+          </div>
+          <div class="flex md:flex-row flex-col items-center">
+            <div class="flex justify-center min-w-[33%]">
+              <img src="landingpage/reliable-rebrand_rcpof3.svg" alt="" />
+            </div>
+            <div>
+              <h4 class="font-bold text-3xl text-center">Secure</h4>
+              <p class="text-sm text-gray-500 my-2">
+                Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and
+                is Payment Card Industry Data Security Standard (PCI DSS)
+                compliant
+              </p>
+            </div>
+          </div>
+          <div class="flex md:flex-row flex-col md:justify-start items-center">
+            <div class="min-w-[33%]">
+              <img src="landingpage/affordable-rebrand_ivgidq.svg" alt="" />
+            </div>
+            <div>
+              <h4 class="font-bold text-3xl text-center">Affordable</h4>
+              <p class="text-sm text-gray-500 my-2">
+                Find affordable medicine substitutes, save up to 50% on health
+                products, up to 80% off on lab tests and free doctor
+                consultations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-b-2 w-[90%] mx-auto py-2 bg-beige"></div>
+        <div class="text-center">
+          <div class="flex justify-center py-6 gap-12">
+            <div class="w-[6rem]">
+              <img class="h-full w-full" src="landingpage/certi.png" alt="" />
+            </div>
+            <div class="w-[6rem]">
+              <img
+                class="h-full w-full"
+                src="landingpage/URS_ebgmxc.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <span class="font-bold"
+            >India's only LegitScript and ISO/ IEC 27001 certified online
+            healthcare platform
+          </span>
+        </div>
+      </div>
+      <section class="footerData">
+        <div class="py-4 bg-beige shadow-md">
+          <div
+            class="border-2 py-4 px-10 flex items-center justify-between font-bold cursor-pointer contentshow"
+          >
+            <a href="">Know more about Tata 1mg</a>
+            <i class="fa fa-angle-down drop"></i>
+          </div>
+          <div
+            id="hide"
+            class="px-10 py-4 [&>p]:my-2 [&>*]:leading-loose [&>p]:text-sm [&>p]:text-gray-600 [&>h5]:font-semibold text-lg content"
+          >
+            <h5>Access medical and health information</h5>
+            <p>
+              Tata 1mg provides you with medical information which is curated,
+              written and verified by experts, accurate and trustworthy. Our
+              experts create high-quality content about medicines, diseases, lab
+              investigations, Over-The-Counter (OTC) health products, Ayurvedic
+              herbs/ingredients, and alternative remedies.
+            </p>
+            <h5>Order medicines online</h5>
+            <p>
+              Get free medicine home delivery in over 1800 cities across India.
+              You can also order Ayurvedic, Homeopathic and other
+              Over-The-Counter (OTC) health products. Your safety is our top
+              priority. All products displayed on Tata 1mg are procured from
+              verified and licensed pharmacies.
+            </p>
+            <h5>Book lab tests</h5>
+            <p>
+              Book any lab tests and preventive health packages from certified
+              labs and get tested from the comfort of your home. Enjoy free home
+              sample collection, view reports online and consult a doctor online
+              for free.
+            </p>
+            <h5>Consult a doctor online</h5>
+            <p>
+              Got a health query? Consult doctors online from the comfort of
+              your home for free. Chat privately with our registered medical
+              specialists to connect directly with verified doctors. Your
+              privacy is guaranteed.
+            </p>
+          </div>
+        </div>
+      </section>
     </footer>
     <!------------------------------------ scripts------------------------------ -->
     <script
@@ -1928,5 +2041,15 @@
 
       
     </script> -->
+    <script>
+      document.querySelector(".contentshow").addEventListener("click", () => {
+        let hide = document.querySelector(".content");
+        if (hide.id === "hide") {
+          hide.id = "";
+        } else {
+          hide.id = "hide";
+        }
+      });
+    </script>
   </body>
 </html>

@@ -71,3 +71,7 @@ h6 {
   color: rgba(114, 113, 113, 0.903);
   font-size: 0.8rem;
 }
+
+#hide {
+  display: none;
+}
