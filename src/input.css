@@ -92,17 +92,20 @@ h6 {
   }
 }
 
-.slider2 div {
-  padding: 2em 0.5;
+.slider2 li {
+  border-radius: 8px;
+  border: 1px solid rgba(120, 118, 118, 0.718);
+  padding: 1em 0 1em 1em !important;
 }
 
-.slider2 li {
-  padding: 3em 1.5em;
-  &:hover {
-    box-shadow:
-      rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    border-radius: 3px solid rgba(52, 49, 49, 0.718);
-    cursor: pointer;
-  }
+.slider2 li:hover {
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+  cursor: pointer;
+}
+
+.rate {
+  padding-top: 2.5em;
 }

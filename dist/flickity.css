@@ -26,6 +26,10 @@
   margin: 0;
   padding: 0;
 }
+
+.slider2 .slick-list .slick-slide {
+  margin: 0 5px;
+}
 .slick-list:focus {
   outline: none;
 }
@@ -103,10 +107,9 @@
 }
 .slick-prev,
 .slick-next {
-  /* height: 30%; */
   margin: 0 auto;
   font-size: 20px;
-  color: orange;
+  color: rgb(255, 42, 0);
   position: absolute;
   top: 50%;
   transform: translateY(-70%);
@@ -115,14 +118,14 @@
   cursor: pointer;
   background-color: white;
   padding: 0.8em;
-  border-radius: 50%; /* Circular background */
+  border-radius: 50%;
   transition: background-color 0.3s ease;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .slick-prev {
-  left: 0;
+  left: -5%;
 }
 
 .slick-next {
-  right: 0;
+  right: -5%;
 }
