@@ -109,3 +109,15 @@ h6 {
 .rate {
   padding-top: 2.5em;
 }
+.slid3 {
+  padding: 2em 0;
+}
+.slid3 li {
+  padding: 2em 0;
+}
+.slid3 li:hover {
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  cursor: pointer;
+}
