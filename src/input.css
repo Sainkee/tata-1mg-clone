@@ -136,3 +136,28 @@ h6 {
 .slid4 li p {
   margin-bottom: 0.5em;
 }
+
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+  font-family: "slick";
+  font-size: 40px !important;
+  opacity: 0.75;
+  line-height: 1;
+  color: rgb(231, 114, 19) !important; /* Set arrow color */
+
+  border-radius: 50%; /* Make it round */
+}
+
+.slick-prev {
+  top: 40% !important;
+  left: -50px !important; /* Adjust left position */
+}
+
+.slick-next {
+  top: 40% !important;
+  right: 40px; /* Adjust right position */
+}
+.slider2 .slick-list .slick-slide {
+  margin: 0 5px;
+}

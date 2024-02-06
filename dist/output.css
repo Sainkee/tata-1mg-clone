@@ -619,10 +619,6 @@ video {
   width: 40%;
 }
 
-.w-\[60\%\] {
-  width: 60%;
-}
-
 .w-\[6rem\] {
   width: 6rem;
 }
@@ -1172,6 +1168,35 @@ h6 {
   margin-bottom: 0.5em;
 }
 
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+  font-family: "slick";
+  font-size: 40px !important;
+  opacity: 0.75;
+  line-height: 1;
+  color: rgb(231, 114, 19) !important;
+  /* Set arrow color */
+  border-radius: 50%;
+  /* Make it round */
+}
+
+.slick-prev {
+  top: 40% !important;
+  left: -50px !important;
+  /* Adjust left position */
+}
+
+.slick-next {
+  top: 40% !important;
+  right: 40px;
+  /* Adjust right position */
+}
+
+.slider2 .slick-list .slick-slide {
+  margin: 0 5px;
+}
+
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(255 110 97 / var(--tw-text-opacity));
@@ -1207,10 +1232,6 @@ h6 {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
   }
 
   .md\:justify-start {
