@@ -118,10 +118,11 @@
   cursor: pointer;
   background-color: white;
   padding: 0.8em;
-  border-radius: 50%;
+  border-radius: 50%; /* Set border-radius to make the buttons fully rounded */
   transition: background-color 0.3s ease;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .slick-prev {
   left: -5%;
 }
