@@ -76,5 +76,18 @@ h6 {
   display: none;
 }
 .sideimg {
-  height: 190px;
+  height: 11.35em;
+}
+.multiple-items img {
+  padding: 1em 1.7em;
+}
+.multiple-items li {
+  &:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 1px solid rgba(52, 49, 49, 0.718);
+    border-radius: 8px;
+  }
+  p {
+    margin-bottom: 0.5em;
+  }
 }

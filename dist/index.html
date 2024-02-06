@@ -28,7 +28,7 @@
 
     <!-- font-awesome  -->
   </head>
-  <body>
+  <body class="font-sans leading-[1.42857143]">
     <nav
       class="flex items-center justify-between text-base font-semibold p-4 border-b-2 flex-wrap relative"
     >
@@ -1619,7 +1619,7 @@
       </div>
     </section>
     <!-- slider products -->
-    <section class="">
+    <section class="bg-offwhite">
       <div class="mx-auto">
         <div class="bg-offwhite">
           <div class="flex justify-between w-[80%] mx-auto py-5">
@@ -1629,6 +1629,66 @@
               >see more</span
             > -->
           </div>
+          <div class="bg-white w-full shadow-lg">
+            <ul class="multiple-items w-[80%] mx-auto text-center py-10">
+              <li>
+                <img src="landingpage/product1/diabetes.webp" alt="Diabetes" />
+                <p class="pt-2">Diabetes</p>
+              </li>
+              <li>
+                <img
+                  src="landingpage/product1/heart care.webp"
+                  alt="Heart Care"
+                />
+                <p class="pt-2">Heart Care</p>
+              </li>
+              <li>
+                <img
+                  src="landingpage/product1/stomach care.webp"
+                  alt="Stomach Care"
+                />
+                <p class="pt-2">Stomach Care</p>
+              </li>
+              <li>
+                <img
+                  src="landingpage/product1/liver care.webp"
+                  alt="Liver Care"
+                />
+                <p class="pt-2">Liver Care</p>
+              </li>
+              <li>
+                <img
+                  src="landingpage/product1/bone,joint.webp"
+                  alt="Bone and Joint Care"
+                />
+                <p class="pt-2">Bone and Joint Care</p>
+              </li>
+              <li>
+                <img src="landingpage/product1/kidney.webp" alt="Kidney Care" />
+                <p class="pt-2">Kidney Care</p>
+              </li>
+              <li>
+                <img src="landingpage/product1/derma.webp" alt="Derma Care" />
+                <p class="pt-2">Derma Care</p>
+              </li>
+              <li>
+                <img
+                  src="landingpage/product1/respiratory.webp"
+                  alt="Respiratory Care"
+                />
+                <p class="pt-2">Respiratory Care</p>
+              </li>
+            </ul>
+          </div>
+          <!-- see more section -->
+          <div class="flex justify-between w-[80%] mx-auto py-5">
+            <p class="text-xl bg-offwhite">Full body health checkups</p>
+            <span
+              class="bg-primary text-white rounded-md py-1 px-2 cursor-pointer"
+              >See All</span
+            >
+          </div>
+          <!-- slid-2 -->
         </div>
       </div>
     </section>
@@ -2030,8 +2090,12 @@
 
       $(".multiple-items").slick({
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 7,
+        slidesToScroll: 2,
+        prevArrow:
+          '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow:
+          '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
       });
     </script>
 
