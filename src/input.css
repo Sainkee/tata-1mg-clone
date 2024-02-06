@@ -121,3 +121,18 @@ h6 {
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   cursor: pointer;
 }
+
+.slid4 img {
+  margin: 0 auto;
+  height: 10em;
+  width: 50%;
+}
+
+.slid4 li:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+}
+
+.slid4 li p {
+  margin-bottom: 0.5em;
+}
