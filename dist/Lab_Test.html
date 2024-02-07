@@ -1,461 +1,979 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="/lab-test/img/afterheader.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="/lab-test/img/afterheader.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-  <div class="div">  
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <nav
+      class="relative mt-2 hidden flex-wrap items-center justify-between border-b-2 p-4 text-base font-semibold md:flex"
+    >
+      <div class="flex items-center justify-between">
+        <div class="pr-12">
+          <img src="landingpage/tata_1mg_logo.svg" alt="Tata1mg" />
+        </div>
+        <ul
+          class="navLink flex items-center justify-center gap-5 text-[0.8rem]"
+        >
+          <li>
+            <a href="" class="">Medicine</a>
+          </li>
+          <li class="">
+            <a href="./Lab_Test.html" class="flex items-center text-primary">
+              Lab Tests
+              <div class="relative flex h-8 w-16">
+                <!-- Layer 1: Ping Animation -->
+                <div
+                  class="absolute h-full w-full animate-ping rounded-md"
+                  style="
+                    background-color: hsl(5, 100%, 69%);
+                    opacity: 0.75;
+                    animation-delay: 0.5s;
+                  "
+                ></div>
 
-    <div class="slideshow-container">
+                <!-- Layer 2: Pink Circle -->
+                <div
+                  class="absolute h-8 w-16 animate-ping rounded-md"
+                  style="
+                    background-color: hsl(5, 100%, 69%);
+                    opacity: 0.75;
+                    animation-delay: 0.3s;
+                  "
+                ></div>
 
-    <div class="mySlides fade">
-  
-  <img src="/lab-test/img/1.png" style="width:80%">
-  
+                <!-- Layer 3: Text-Centered Rectangle -->
+                <div class="flex items-center justify-center p-2">
+                  <span
+                    class="relative flex w-full items-center justify-center rounded-md bg-primary px-2 text-center text-white delay-0"
+                  >
+                    SAFE
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">consult doctors </a>
+          </li>
+          <li>
+            <a href="">cancer care</a>
+          </li>
+          <li>
+            <a href="">ayurveda</a>
+          </li>
+          <li>
+            <a href="" class="flex items-center">
+              Care Plan
+
+              <span class="ml-1 rounded-md bg-primary px-2 text-white"
+                >SAVE MORE</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex items-center justify-between gap-5 text-center text-sm text-gray-600"
+      >
+        <div>Login | Sign Up</div>
+        <a href="">Offer</a>
+        <i class="fa-solid fa-cart-shopping fa-flip-horizontal fa-2xl"></i>
+      </div>
+      <a class="text-gray-600" href="">Need Help?</a>
+    </nav>
+    <!-- for mobile design -->
+    <header class="flex items-center justify-between p-5 md:hidden">
+      <div class="flex items-center gap-10">
+        <a id="metaMenu" class="text-3xl" href="#">&#9776;</a>
+        <img src="landingpage/tata_1mg_logo.svg" alt="Tata1mg" />
+      </div>
+      <div>
+        <i class="fa-solid fa-cart-shopping fa-flip-horizontal text-xl"></i>
+      </div>
+    </header>
+    <div class="mx-auto w-full border-b-2 md:hidden"></div>
+    <!-- nav end -->
+
+    <div class="searchBar mb-6 px-5 md:hidden">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center py-5">
+          <i class="fa-solid fa-location-dot"></i>
+          <label for="cities"></label>
+          <select
+            id="cities"
+            name="cities"
+            class="min-w-full px-2 py-1 focus:outline-none"
+          >
+            <option value="kolkata">Kolkata</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="delhi">Delhi</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="chennai">Chennai</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="pune">Pune</option>
+            <option value="ahmedabad">Ahmedabad</option>
+            <option value="surat">Surat</option>
+            <option value="jaipur">Jaipur</option>
+            <option value="lucknow">Lucknow</option>
+            <option value="kanpur">Kanpur</option>
+            <option value="nagpur">Nagpur</option>
+            <option value="patna">Patna</option>
+            <option value="indore">Indore</option>
+            <option value="thane">Thane</option>
+            <option value="bhopal">Bhopal</option>
+            <option value="visakhapatnam">Visakhapatnam</option>
+            <option value="vadodara">Vadodara</option>
+            <option value="firozabad">Firozabad</option>
+            <option value="ludhiana">Ludhiana</option>
+            <option value="ranchi">Ranchi</option>
+            <option value="ahmednagar">Ahmednagar</option>
+            <option value="vijayawada">Vijayawada</option>
+            <option value="allahabad">Allahabad</option>
+            <option value="jamshedpur">Jamshedpur</option>
+            <option value="amritsar">Amritsar</option>
+            <option value="bhubaneswar">Bhubaneswar</option>
+            <option value="aurangabad">Aurangabad</option>
+            <option value="rourkela">Rourkela</option>
+            <!-- Add more cities as needed -->
+          </select>
+        </div>
+      </div>
+      <div class="flex items-center rounded-md border-2 py-2">
+        <input
+          type="text"
+          class="search-input w-full min-w-[30%] px-2 py-1 focus:outline-none"
+          placeholder="Search Medicines... "
+        />
+        <div class="search-icon -translate-x-5">
+          <i class="fa fa-search px-2 py-1 focus:outline-none"></i>
+        </div>
+      </div>
     </div>
+    <!-- for mobile design end -->
 
-    <div class="mySlides fade">
- 
-  <img src="/lab-test/img/2.jpg" style="width:80%">
-  
-    </div>
-
-    <div class="mySlides fade">
- 
-  <img src="/lab-test//img/3.png" style="width:80%">
- 
-    </div>
-    <div class="mySlides fade">
- 
-    <img src="/lab-test//img/4.jpg" style="width:80%">
-   
-  </div>
-  <div class="mySlides fade">
- 
-    <img src="/lab-test//img/5.jpg" style="width:80%">
-   
-  </div>
-  <div class="mySlides fade">
- 
-    <img src="/lab-test//img/6.png" style="width:80%">
-   
-  </div>
-  <div class="mySlides fade">
- 
-    <img src="/lab-test//img/7.jpg" style="width:80%">
-   
-  </div>
-  <div class="mySlides fade">
- 
-    <img src="/lab-test//img/8.png" style="width:80%">
-   
-  </div>
-
-</div>
-
-
-
-<div>
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-
-<div class="d1">
-    <h3 id="h1">Lab Test Form The Comfort Of Your Home</h3>
-    <p id="perad1"> Trusted by 40Lakhs+ satisfied customers | 1 Crore+ lab tests booked</p>
-</div>
-
-<div id="divmiddleselection">
-    <div id="md1">
-        <img src="/lab-test/img/safe.png" id="imgdivmid">
-        <p id="pmd">100% Safe & Hygienic</p>
-    </div>
-    <div id="md1">
-        <img src="/lab-test/img/dellivery.png" id="imgdivmid">
-        <p id="pmd">Home Sample Pick Up</p>
-    </div>
-    <div id="md1">
-        <img src="/lab-test/img/comp.png" id="imgdivmid">
-        <p id="pmd">View Reports Online</p>
-    </div>
-    <div id="md1">
-        <img src="/lab-test/img/dr.png" id="imgdivmid">
-        <p id="pmd">Free Doctor Consultation</p>
-    </div>
-    <div id="md1" style="border: none;">
-        <img src="/lab-test/img/price.png" id="imgdivmid">
-        <p id="pmd">Best Price Guaranteed</p>
-    </div>
-    <div class="divbuttun">
-        <button id="button"> VIEW POPULAR PACKAGES</button>
+    <div class="hidden border-b-2 md:block">
+      <div class="flex w-full items-center justify-between p-4">
+        <div class="flex w-[50%] grow items-center gap-2">
+          <div class="flex items-center justify-between bg-slate-200 px-4">
+            <div class="flex items-center">
+              <i class="fa-solid fa-location-dot"></i>
+              <label for="cities"></label>
+              <select
+                id="cities"
+                name="cities"
+                class="bg-slate-200 px-2 py-1 focus:outline-none"
+              >
+                <option value="kolkata">Kolkata</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="chennai">Chennai</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="pune">Pune</option>
+                <option value="ahmedabad">Ahmedabad</option>
+                <option value="surat">Surat</option>
+                <option value="jaipur">Jaipur</option>
+                <option value="lucknow">Lucknow</option>
+                <option value="kanpur">Kanpur</option>
+                <option value="nagpur">Nagpur</option>
+                <option value="patna">Patna</option>
+                <option value="indore">Indore</option>
+                <option value="thane">Thane</option>
+                <option value="bhopal">Bhopal</option>
+                <option value="visakhapatnam">Visakhapatnam</option>
+                <option value="vadodara">Vadodara</option>
+                <option value="firozabad">Firozabad</option>
+                <option value="ludhiana">Ludhiana</option>
+                <option value="ranchi">Ranchi</option>
+                <option value="ahmednagar">Ahmednagar</option>
+                <option value="vijayawada">Vijayawada</option>
+                <option value="allahabad">Allahabad</option>
+                <option value="jamshedpur">Jamshedpur</option>
+                <option value="amritsar">Amritsar</option>
+                <option value="bhubaneswar">Bhubaneswar</option>
+                <option value="aurangabad">Aurangabad</option>
+                <option value="rourkela">Rourkela</option>
+              </select>
+            </div>
+            <i class="fa fa-location"></i>
+          </div>
+          <div class="w-[70%]">
+            <input
+              type="text"
+              class="search-input w-[100%] grow bg-slate-200 py-1 focus:outline-none"
+              placeholder="Search for Medicines and Health Product"
+            />
+          </div>
+          <div class="search-icon -translate-x-10">
+            <i
+              class="fa fa-search bg-slate-200 px-2 py-1 focus:outline-none"
+            ></i>
+          </div>
         </div>
 
-    </div>
-    <div class="howbook-div">
-        <img src="/lab-test//img/howtobooktest.png" alt="">
+        <div class="flex w-[30%] grow items-center justify-end gap-2">
+          <i class="fa-solid fa-bolt" style="color: #b197fc"></i>
+          <span class="text-wrap">QUICK BUY! Get 15% off on medicines*</span>
+          <button class="rounded-md bg-primary px-4 py-2 text-white">
+            Quick order
+          </button>
         </div>
-        
-</div>
-<!-- profile section-->
-<h2 style="position: absolute; top: 18em; left: 16%; font-size: 1.5rem;">Popular lab tests & profiles</h2>
-<div class="prdiv">
-  <div id="fstdiv"> 
-  <img src="/lab-test//img//home-icon.jpg" id="imgprd"> <h7><b>HEALTH TEST AT OUR HOME</b></h7>  
-  
-
-  <div class="grid-container">
-  <div class="grid-item">
-    <img src="/lab-test//img//add plus.png" id="imgpr"> &ensp;<h7> CBC (Completed Blood Count)</h7> 
-  </div>
-  <div class="grid-item">
-    <img src="/lab-test//img//add plus.png" id="imgpr"> &ensp;<h7>LFT(Liver Function Test)</h7> 
-
-  </div>
-  <div class="grid-item">
-    <img src="/lab-test//img//add plus.png" id="imgpr">&ensp;<h7>Lipid  Profile</h7> 
-  </div>  
- 
-  </div>
-
-<div class="grid-container2">
-  <div class="grid-item">
-    <img src="/lab-test//img//add plus.png" id="imgpr"> &ensp;<h7> Thyroid Profile Total(T3,T4&THS)</h7> 
-  </div>
-  <div class="grid-item">
-    <img src="/lab-test//img//add plus.png" id="imgpr"> &ensp;<h7>Diabetes Screening(HbA1C & Fasting Sugar)</h7> 
-
-  </div>
-  <div class="grid-item">
-    <img src="/lab-test//img//add plus.png" id="imgpr">&ensp;<h7>Covid-RTPCR</h7> 
-  </div>  
- 
-</div>
-</div>
-<!-- Secound div-->
-<div id="scnddiv">
-
-  <div id=""> 
-    <img src="/lab-test//img//home-icon.jpg" id="imgprd"> <h7><b>VISIT A LAB NEAR YOU</b></h7>  
+      </div>
     </div>
-  
-    <div class="grid-container3">
-    <div class="grid-item">
-      <img src="/lab-test//img//add plus.png" id="imgpr"> &ensp;<h7> Ultrasound Whole Abdomen</h7> 
+    <!-- searchbar end -->
+
+    <div class="div">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/lab-test/img/1.png" style="width: 80%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="/lab-test/img/2.jpg" style="width: 80%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="/lab-test//img/3.png" style="width: 80%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="/lab-test//img/4.jpg" style="width: 80%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="/lab-test//img/5.jpg" style="width: 80%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="/lab-test//img/6.png" style="width: 80%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="/lab-test//img/7.jpg" style="width: 80%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="/lab-test//img/8.png" style="width: 80%" />
+        </div>
+      </div>
+
+      <div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>
+
+      <div class="d1" style="top: 10em">
+        <h3 id="h1">Lab Test Form The Comfort Of Your Home</h3>
+        <p id="perad1">
+          Trusted by 40Lakhs+ satisfied customers | 1 Crore+ lab tests booked
+        </p>
+      </div>
+
+      <div id="divmiddleselection">
+        <div id="md1">
+          <img src="/lab-test/img/safe.png" id="imgdivmid" />
+          <p id="pmd">100% Safe & Hygienic</p>
+        </div>
+        <div id="md1">
+          <img src="/lab-test/img/dellivery.png" id="imgdivmid" />
+          <p id="pmd">Home Sample Pick Up</p>
+        </div>
+        <div id="md1">
+          <img src="/lab-test/img/comp.png" id="imgdivmid" />
+          <p id="pmd">View Reports Online</p>
+        </div>
+        <div id="md1">
+          <img src="/lab-test/img/dr.png" id="imgdivmid" />
+          <p id="pmd">Free Doctor Consultation</p>
+        </div>
+        <div id="md1" style="border: none">
+          <img src="/lab-test/img/price.png" id="imgdivmid" />
+          <p id="pmd">Best Price Guaranteed</p>
+        </div>
+        <div class="divbuttun">
+          <button id="button">VIEW POPULAR PACKAGES</button>
+        </div>
+      </div>
+      <div class="howbook-div">
+        <img src="/lab-test//img/howtobooktest.png" alt="" />
+      </div>
     </div>
-    <div class="grid-item">
-      <img src="/lab-test//img//add plus.png" id="imgpr"> &ensp;<h7>X -Ray Chest PA View </h7> 
-  
-    </div>
-    <div class="grid-item">
-      <img src="/lab-test//img//add plus.png" id="imgpr">&ensp;<h7>NCCT Scan Brain</h7> 
-    </div>  
-   
-    </div>
-  
-  <div class="grid-container4">
-    <div class="grid-item">
-      <img src="/lab-test//img//add plus.png" id="imgpr"> &ensp;<h7>Electrocardiography</h7> 
-    </div>
-    <div class="grid-item">
-      <img src="/lab-test//img//add plus.png" id="imgpr"> &ensp;<h7>MRI Brain</h7> 
-  
-    </div>
-    <div class="grid-item">
-      <img src="/lab-test//img//add plus.png" id="imgpr">&ensp;<h7>MRI Cervical Spine</h7> 
-    </div>  
+    <!-- profile section-->
+    <h2 style="position: absolute; top: 18em; left: 16%; font-size: 1.5rem">
+      Popular lab tests & profiles
+    </h2>
+    <div class="prdiv">
+      <div id="fstdiv">
+        <img src="/lab-test//img//home-icon.jpg" id="imgprd" />
+        <h7><b>HEALTH TEST AT OUR HOME</b></h7>
+
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" /> &ensp;<h7>
+              CBC (Completed Blood Count)</h7
+            >
+          </div>
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" /> &ensp;<h7
+              >LFT(Liver Function Test)</h7
+            >
+          </div>
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" />&ensp;<h7
+              >Lipid Profile</h7
+            >
+          </div>
+        </div>
+
+        <div class="grid-container2">
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" /> &ensp;<h7>
+              Thyroid Profile Total(T3,T4&THS)</h7
+            >
+          </div>
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" /> &ensp;<h7
+              >Diabetes Screening(HbA1C & Fasting Sugar)</h7
+            >
+          </div>
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" />&ensp;<h7
+              >Covid-RTPCR</h7
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Secound div-->
+      <div id="scnddiv">
+        <div id="">
+          <img src="/lab-test//img//home-icon.jpg" id="imgprd" />
+          <h7><b>VISIT A LAB NEAR YOU</b></h7>
+        </div>
+
+        <div class="grid-container3">
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" /> &ensp;<h7>
+              Ultrasound Whole Abdomen</h7
+            >
+          </div>
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" /> &ensp;<h7
+              >X -Ray Chest PA View
+            </h7>
+          </div>
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" />&ensp;<h7
+              >NCCT Scan Brain</h7
+            >
+          </div>
+        </div>
+
+        <div class="grid-container4">
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" /> &ensp;<h7
+              >Electrocardiography</h7
+            >
+          </div>
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" /> &ensp;<h7
+              >MRI Brain</h7
+            >
+          </div>
+          <div class="grid-item">
+            <img src="/lab-test//img//add plus.png" id="imgpr" />&ensp;<h7
+              >MRI Cervical Spine</h7
+            >
+          </div>
+        </div>
+      </div>
+
+      <button class="button">
+        <img
+          src="/lab-test/img/search-icon.png"
+          style="height: 2.5em; width: 2.5em; position: relative; right: 6em"
+        />
+        <h2 style="position: absolute; top: 0; left: 4em">Find Your Test</h2>
+      </button>
     </div>
 
+    <div class="check">
+      <h3 sty>Popular health checkups</h3>
+      <div class="flex-container">
+        <div><button class="g">Popular packages</button></div>
+        &ensp;&ensp;
+        <div><button class="g1">Fever</button></div>
+        &ensp;&ensp;
+        <div><button class="g2">Women Health</button></div>
+        &ensp;&ensp;
+        <div><button class="g">Diabetes</button></div>
+        &ensp;&ensp;
+        <div><button class="g1">Fitness</button></div>
+        &ensp;&ensp;
+        <div><button class="g1">Covid 19</button></div>
+        &ensp;&ensp;
+        <div><button class="g2">Senior Citizen</button></div>
+        &ensp;&ensp;
+        <div><button class="g2">Allergy Profiles</button></div>
+        &ensp;&ensp;
+        <div><button class="g2">Lifestyle Habits</button></div>
+      </div>
+      <p
+        style="
+          text-align: right;
+          position: absolute;
+          left: 92%;
+          top: 1em;
+          color: rgb(255, 102, 31);
+        "
+      >
+        VIEW ALL
+      </p>
+      <br /><br />
+      <div class="flex-container2">
+        <div class="fst">
+          <p style="font-size: 1em; padding-left: 0.6em">
+            <b>Comprehensive Gold Full Bo..</b>
+          </p>
 
-</div>
-
-<button class="button" ><img src="/lab-test/img/search-icon.png" style="height: 2.5em;width: 2.5em; position: relative; right: 6em;"><h2 style="position: absolute; top: 0; left :4em">Find Your Test</h2></button>
-</div>
-
-<div class="check">
-  <h3 sty>Popular health checkups</h3>
-  <div class="flex-container">
-    <div><button class="g">Popular packages</button></div>&ensp;&ensp;
-    <div><button class="g1">Fever</button></div>&ensp;&ensp;
-    <div><button class="g2"> Women Health</button></div>&ensp;&ensp;
-    <div> <button class="g"> Diabetes</button></div>&ensp;&ensp;
-    <div> <button class="g1"> Fitness</button></div>&ensp;&ensp;
-    <div> <button class="g1">Covid 19</button></div>&ensp;&ensp;
-    <div><button class="g2">Senior Citizen</button></div>&ensp;&ensp;
-    <div> <button class="g2">Allergy Profiles</button></div>&ensp;&ensp;
-    <div> <button class="g2">Lifestyle Habits</button></div>
-    
-  </div>
-  <p style="text-align: right; position:absolute;left: 92%; top: 1em; color: rgb(255, 102, 31);">VIEW ALL</p>
-  <br><br>
-  <div class="flex-container2">
-    <div class="fst">
-      <p style="font-size: 1em; padding-left: .6em;"><b>Comprehensive Gold Full Bo..</b></p>
-     
-      <div style=" position: relative ; top: -2em; left: 77%; background-color: rgb(255, 214, 138); width: 5em; overflow: hidden;">
-         <img src="/lab-test/img/safe.png" alt="" style="height: 1.5em;"> SAFE</div>
-         <p id="list">Includes 79test</p>
-         <br>
-         <p id="list">Serum Calcium</p>
-         <p id="list">Serum Iron Studio Basic(4)</p>
-         <p id="list">Vitamin Profile(3)</p>
-         <p style="font-size: .9em; padding-left: .6em;"><b>+ More</b></p>
-        <br><br>
-         <p id="list">Get Report within <strong>24 Hours</strong></p>
-          <p ><b>&#8377; 2199</b></p>
-           <p style="padding-left: .6em;color: rgb(182,176,176);text-decoration: line-through;position: relative; top:-2.3em ;left:4.5em">
+          <div
+            style="
+              position: relative;
+              top: -2em;
+              left: 77%;
+              background-color: rgb(255, 214, 138);
+              width: 5em;
+              overflow: hidden;
+            "
+          >
+            <img src="/lab-test/img/safe.png" alt="" style="height: 1.5em" />
+            SAFE
+          </div>
+          <p id="list">Includes 79test</p>
+          <br />
+          <p id="list">Serum Calcium</p>
+          <p id="list">Serum Iron Studio Basic(4)</p>
+          <p id="list">Vitamin Profile(3)</p>
+          <p style="font-size: 0.9em; padding-left: 0.6em"><b>+ More</b></p>
+          <br /><br />
+          <p id="list">Get Report within <strong>24 Hours</strong></p>
+          <p><b>&#8377; 2199</b></p>
+          <p
+            style="
+              padding-left: 0.6em;
+              color: rgb(182, 176, 176);
+              text-decoration: line-through;
+              position: relative;
+              top: -2.3em;
+              left: 4.5em;
+            "
+          >
             <b>&#8377;4398</b>
           </p>
-          <div style="padding-left: .4em;border:1px solid black; border-style: dotted;width: 5em;height: 2em; background-color: rgb(175, 255, 175);position: relative; top: -2em;">
-            <p style="font-size: 1em; position: relative;top: -.5em;color: green;" >50% off</p>
+          <div
+            style="
+              padding-left: 0.4em;
+              border: 1px solid black;
+              border-style: dotted;
+              width: 5em;
+              height: 2em;
+              background-color: rgb(175, 255, 175);
+              position: relative;
+              top: -2em;
+            "
+          >
+            <p
+              style="
+                font-size: 1em;
+                position: relative;
+                top: -0.5em;
+                color: green;
+              "
+            >
+              50% off
+            </p>
           </div>
           <button id="buttun">ADD TO CART</button>
         </div>
-    
-  
 
- 
-    <div class="fst">
-      <p style="font-size: 1em; padding-left: .6em;"><b>Comprehensive Gold Full Bo..</b></p>
-     
-      <div style=" position: relative ; top: -2em; left: 77%; background-color: rgb(255, 214, 138); width: 5em; overflow: hidden;">
-         <img src="/lab-test/img/safe.png" alt="" style="height: 1.5em;"> SAFE</div>
-         <p id="list">Includes 79test</p>
-         <br>
-         <p id="list">Serum Calcium</p>
-         <p id="list">Serum Iron Studio Basic(4)</p>
-         <p id="list">Vitamin Profile(3)</p>
-         <p style="font-size: .9em; padding-left: .6em;"><b>+ More</b></p>
-        <br><br>
-         <p id="list">Get Report within <strong>24 Hours</strong></p>
-          <p ><b>&#8377; 2199</b></p>
-           <p style="padding-left: .6em;color: rgb(182,176,176);text-decoration: line-through;position: relative; top:-2.3em ;left:4.5em">
-            <b>&#8377;4398</b>
+        <div class="fst">
+          <p style="font-size: 1em; padding-left: 0.6em">
+            <b>Comprehensive Gold Full Bo..</b>
           </p>
-          <div style="padding-left: .4em;border:1px solid black; border-style: dotted;width: 5em;height: 2em; background-color: rgb(175, 255, 175);position: relative; top: -2em;">
-            <p style="font-size: 1em; position: relative;top: -.5em;color: green;" >50% off</p>
-          </div>
-          <button id="buttun">ADD TO CART</button>
-        </div>
-    
 
-  
-  
-    <div class="fst">
-      <p style="font-size: 1em; padding-left: .6em;"><b>Comprehensive Gold Full Bo..</b></p>
-     
-      <div style=" position: relative ; top: -2em; left: 77%; background-color: rgb(255, 214, 138); width: 5em; overflow: hidden;">
-         <img src="/lab-test/img/safe.png" alt="" style="height: 1.5em;"> SAFE</div>
-         <p id="list">Includes 79test</p>
-         <br>
-         <p id="list">Serum Calcium</p>
-         <p id="list">Serum Iron Studio Basic(4)</p>
-         <p id="list">Vitamin Profile(3)</p>
-         <p style="font-size: .9em; padding-left: .6em;"><b>+ More</b></p>
-        <br><br>
-         <p id="list">Get Report within <strong>24 Hours</strong></p>
-          <p ><b>&#8377; 2199</b></p>
-           <p style="padding-left: .6em;color: rgb(182,176,176);text-decoration: line-through;position: relative; top:-2.3em ;left:4.5em">
-            <b>&#8377;4398</b>
-          </p>
-          <div style="padding-left: .4em;border:1px solid black; border-style: dotted;width: 5em;height: 2em; background-color: rgb(175, 255, 175);position: relative; top: -2em;">
-            <p style="font-size: 1em; position: relative;top: -.5em;color: green;" >50% off</p>
+          <div
+            style="
+              position: relative;
+              top: -2em;
+              left: 77%;
+              background-color: rgb(255, 214, 138);
+              width: 5em;
+              overflow: hidden;
+            "
+          >
+            <img src="/lab-test/img/safe.png" alt="" style="height: 1.5em" />
+            SAFE
           </div>
-          <button id="buttun">ADD TO CART</button>
-        </div>
-    
-    <div class="fst">
-      <p style="font-size: 1em; padding-left: .6em;"><b>Comprehensive Gold Full Bo..</b></p>
-     
-      <div style=" position: relative ; top: -2em; left: 77%; background-color: rgb(255, 214, 138); width: 5em; overflow: hidden;">
-         <img src="/lab-test/img/safe.png" alt="" style="height: 1.5em;"> SAFE</div>
-         <p id="list">Includes 79test</p>
-         <br>
-         <p id="list">Serum Calcium</p>
-         <p id="list">Serum Iron Studio Basic(4)</p>
-         <p id="list">Vitamin Profile(3)</p>
-         <p style="font-size: .9em; padding-left: .6em;"><b>+ More</b></p>
-        <br><br>
-         <p id="list">Get Report within <strong>24 Hours</strong></p>
-          <p ><b>&#8377; 2199</b></p>
-           <p style="padding-left: .6em;color: rgb(182,176,176);text-decoration: line-through;position: relative; top:-2.3em ;left:4.5em">
+          <p id="list">Includes 79test</p>
+          <br />
+          <p id="list">Serum Calcium</p>
+          <p id="list">Serum Iron Studio Basic(4)</p>
+          <p id="list">Vitamin Profile(3)</p>
+          <p style="font-size: 0.9em; padding-left: 0.6em"><b>+ More</b></p>
+          <br /><br />
+          <p id="list">Get Report within <strong>24 Hours</strong></p>
+          <p><b>&#8377; 2199</b></p>
+          <p
+            style="
+              padding-left: 0.6em;
+              color: rgb(182, 176, 176);
+              text-decoration: line-through;
+              position: relative;
+              top: -2.3em;
+              left: 4.5em;
+            "
+          >
             <b>&#8377;4398</b>
           </p>
-          <div style="padding-left: .4em;border:1px solid black; border-style: dotted;width: 5em;height: 2em; background-color: rgb(175, 255, 175);position: relative; top: -2em;">
-            <p style="font-size: 1em; position: relative;top: -.5em;color: green;" >50% off</p>
+          <div
+            style="
+              padding-left: 0.4em;
+              border: 1px solid black;
+              border-style: dotted;
+              width: 5em;
+              height: 2em;
+              background-color: rgb(175, 255, 175);
+              position: relative;
+              top: -2em;
+            "
+          >
+            <p
+              style="
+                font-size: 1em;
+                position: relative;
+                top: -0.5em;
+                color: green;
+              "
+            >
+              50% off
+            </p>
           </div>
           <button id="buttun">ADD TO CART</button>
         </div>
 
-</div>
-<br>
-<br>
-<div class="you-tube">
-  <div id="ydiv1"><br>
-    <br>
-    <br>
-    <br>
-    <h1 style="font-size: 1.2em;"> UNCOMPROMISED QUALITY. RELIABLE RESULTS. ALWAYS.</h1>
-    
-    <br>
-    <p style="color: rgb(182, 176, 176);">Spending hours in a queue at a diagnostic lab or a hospital is now a thing of the past. With Tata 1mg you can get your lab tests done from the comfort of your home. Our highly qualified phlebotomist will collect the samples at your preferred time. Watch this video to see steps taken by us to ensure quality and hygiene in sample collection. Book your next lab test with Tata 1mg at the lowest price guaranteed!</p>
-  </div>
-  <div id="ydiv2"><iframe width="800em" height="450em" src="https://www.youtube.com/embed/CLELFdw4Ec0?si=SirBlvckMHspQqmv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-</div>
+        <div class="fst">
+          <p style="font-size: 1em; padding-left: 0.6em">
+            <b>Comprehensive Gold Full Bo..</b>
+          </p>
 
-<div class="crouserdiv1">
-  <h1 style="position: relative; top: .5em;left: 1em;">
-    Our Happy Customers
-  
-  </h1>
-  <div class="slideshow-container2">
-  
-  <div class="mySlides2">
-    <p style="width: 100%; color:rgb(182, 176, 180) ;">Lorem ipsumsamus nostrum eum corrupti!</p>
-    <p class="author2">- John Keats</p>
-  </div>
-  
-  <div class="mySlides2">
-    <q style="width: 100%; color:rgb(182, 176, 180) ;">e udiandae itaque rem. Corrupti explicabo labore blanditiis?</q>
-    <p class="author2">- Ernest Hemingway</p>
-  </div>
-  
-  <div class="mySlides2">
-    <q style="width: 100%; color:rgb(182, 176, 180) ;">Lorem ipsum at voluptatum! Eveniet rerum maiores blanditiis quia earum?q>
-    <p class="author2">- Thomas A. Edison</p>
-  </div>
-  
-  <a class="prev2" onclick="plusSlides(-1)">❮</a>
-  <a class="next2" onclick="plusSlides(1)">❯</a>
-  
-  </div>
-  
-  <div class="dot-container2">
-    <span class="dot2" onclick="currentSlide(1)"></span> 
-    <span class="dot2" onclick="currentSlide(2)"></span> 
-    <span class="dot2" onclick="currentSlide(3)"></span> 
-  </div>
-  
-  <script>
-  var slideIndexs = 1;
-  showSlides(slideIndexs);
-  
-  function plusSlides(n) {
-    showSlides(slideIndexs += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndexs = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides2");
-    var dots = document.getElementsByClassName("dot2");
-    if (n > slides.length) {slideIndexs = 1}    
-    if (n < 1) {slideIndexs = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active2", "");
-    }
-    slides[slideIndexs-1].style.display = "block";  
-    dots[slideIndexs-1].className += " active2";
-  }
-  </script><BR></BR>
-<h1 id="H1CON"> Want to books lab test in bulk?</h1>
-<h4 id="H1CON" style="font-size: 1em;">get customized health packages at best prices</h4>
-<button style="text-align: center; width: 12em; height:3em;background-color:  rgb(255, 92, 32); position: relative; left: 44%; color: white; border-radius: 1em  ;border: none;">CONTACT US &rArr; </button>
+          <div
+            style="
+              position: relative;
+              top: -2em;
+              left: 77%;
+              background-color: rgb(255, 214, 138);
+              width: 5em;
+              overflow: hidden;
+            "
+          >
+            <img src="/lab-test/img/safe.png" alt="" style="height: 1.5em" />
+            SAFE
+          </div>
+          <p id="list">Includes 79test</p>
+          <br />
+          <p id="list">Serum Calcium</p>
+          <p id="list">Serum Iron Studio Basic(4)</p>
+          <p id="list">Vitamin Profile(3)</p>
+          <p style="font-size: 0.9em; padding-left: 0.6em"><b>+ More</b></p>
+          <br /><br />
+          <p id="list">Get Report within <strong>24 Hours</strong></p>
+          <p><b>&#8377; 2199</b></p>
+          <p
+            style="
+              padding-left: 0.6em;
+              color: rgb(182, 176, 176);
+              text-decoration: line-through;
+              position: relative;
+              top: -2.3em;
+              left: 4.5em;
+            "
+          >
+            <b>&#8377;4398</b>
+          </p>
+          <div
+            style="
+              padding-left: 0.4em;
+              border: 1px solid black;
+              border-style: dotted;
+              width: 5em;
+              height: 2em;
+              background-color: rgb(175, 255, 175);
+              position: relative;
+              top: -2em;
+            "
+          >
+            <p
+              style="
+                font-size: 1em;
+                position: relative;
+                top: -0.5em;
+                color: green;
+              "
+            >
+              50% off
+            </p>
+          </div>
+          <button id="buttun">ADD TO CART</button>
+        </div>
 
+        <div class="fst">
+          <p style="font-size: 1em; padding-left: 0.6em">
+            <b>Comprehensive Gold Full Bo..</b>
+          </p>
 
-</div>
- 
-<div class="apk">
-<div>
-  <img src="/lab-test/img//img.jpg" style="height: 30em;">
-</div>
-<div style="width: 50%; height: 15em; float:right;  position: relative; top: -30em;">
-<p style="font-size: 2em;"><b>Download the tata 1mg app</b></p>
-<p style="color: rgb(182, 175, 150);">Book diagnotics test inline with certified labs at best prices</p>
-</div>
-<div style="width: 25%;  height: 15em; float: right; position: relative; left: 25%;top: -40%;">
-<img src="/lab-test//img//play.jpg" style="width: 70%;">
-</div>
-<div style="width: 25%;  height: 15em; float: right; position: relative; left: 68%;top: -40%;">
-<img src="/lab-test//img/apple.jpg" style="width: 70%;">
-</div>
-</div>
-</div>
+          <div
+            style="
+              position: relative;
+              top: -2em;
+              left: 77%;
+              background-color: rgb(255, 214, 138);
+              width: 5em;
+              overflow: hidden;
+            "
+          >
+            <img src="/lab-test/img/safe.png" alt="" style="height: 1.5em" />
+            SAFE
+          </div>
+          <p id="list">Includes 79test</p>
+          <br />
+          <p id="list">Serum Calcium</p>
+          <p id="list">Serum Iron Studio Basic(4)</p>
+          <p id="list">Vitamin Profile(3)</p>
+          <p style="font-size: 0.9em; padding-left: 0.6em"><b>+ More</b></p>
+          <br /><br />
+          <p id="list">Get Report within <strong>24 Hours</strong></p>
+          <p><b>&#8377; 2199</b></p>
+          <p
+            style="
+              padding-left: 0.6em;
+              color: rgb(182, 176, 176);
+              text-decoration: line-through;
+              position: relative;
+              top: -2.3em;
+              left: 4.5em;
+            "
+          >
+            <b>&#8377;4398</b>
+          </p>
+          <div
+            style="
+              padding-left: 0.4em;
+              border: 1px solid black;
+              border-style: dotted;
+              width: 5em;
+              height: 2em;
+              background-color: rgb(175, 255, 175);
+              position: relative;
+              top: -2em;
+            "
+          >
+            <p
+              style="
+                font-size: 1em;
+                position: relative;
+                top: -0.5em;
+                color: green;
+              "
+            >
+              50% off
+            </p>
+          </div>
+          <button id="buttun">ADD TO CART</button>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="you-tube">
+        <div id="ydiv1">
+          <br />
+          <br />
+          <br />
+          <br />
+          <h1 style="font-size: 1.2em">
+            UNCOMPROMISED QUALITY. RELIABLE RESULTS. ALWAYS.
+          </h1>
 
-<div style="height: 58em; position: relative; top: 200em; width: 95%; left: 3%;"> 
+          <br />
+          <p style="color: rgb(182, 176, 176)">
+            Spending hours in a queue at a diagnostic lab or a hospital is now a
+            thing of the past. With Tata 1mg you can get your lab tests done
+            from the comfort of your home. Our highly qualified phlebotomist
+            will collect the samples at your preferred time. Watch this video to
+            see steps taken by us to ensure quality and hygiene in sample
+            collection. Book your next lab test with Tata 1mg at the lowest
+            price guaranteed!
+          </p>
+        </div>
+        <div id="ydiv2">
+          <iframe
+            width="800em"
+            height="450em"
+            src="https://www.youtube.com/embed/CLELFdw4Ec0?si=SirBlvckMHspQqmv"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
 
-<h3>Keep your health in check with Tata 1mg: Lab tests just a click away</h3>
-<br>
-<p><b>Tata 1mg brings care to health</b></p>
-<p>Tata 1mg is India's leading digital healthcare platform. From ordering medicines online to consulting doctors online, Tata 1mg is that one place that aims to fulfill all your health needs within the comfort of your home. In fact, you don’t even need to visit the diagnostic labs to get tests done. Tata 1mg has got that covered too.</p>
-<h4>Tata 1mg: Lab tests now at your doorstep</h4>
-<p>Spending hours in a queue at a diagnostic lab or a hospital is now a thing of the past. With more than 45,00,000 lab tests booked, Tata 1mg labs is on a mission to give you a flawless healthcare experience by bringing "care" to "health".<br><br>
+      <div class="crouserdiv1">
+        <h1 style="position: relative; top: 0.5em; left: 1em">
+          Our Happy Customers
+        </h1>
+        <div class="slideshow-container2">
+          <div class="mySlides2">
+            <p style="width: 100%; color: rgb(182, 176, 180)">
+              Lorem ipsumsamus nostrum eum corrupti!
+            </p>
+            <p class="author2">- John Keats</p>
+          </div>
 
-  With Tata 1mg labs, you can choose the diagnostic lab of your preference and get the hassle-free experience of a diagnostic center at the comfort of your home.<br><br>
-  
-  You can choose the diagnostic lab of your choice and get your lab tests done at discounted prices with the quality of service kept intact.<br><br>
-  
-  Wondering how to book a lab test? It’s simple. You just need to search and add your tests, select the lab of your choice and schedule your test as per your suitable time slot. Once your test gets confirmed, a phlebotomist will be assigned to collect a sample from your home.</p>
-  <h4>Need more help?</h4>
- <p>Just give us a call (18002122323) and we will help you complete your order.</p>
-  <h4>Certified labs: For accessible and affordable experience</h4>
-  <p>We partner with various recognized diagnostic labs to make sure that you have a safe and smooth experience. To ensure quality and hygiene in sample collection and high accuracy in results, we partner with labs that are certified by international bodies like ISO (International Organization for Standardization), NABL (National Accreditation Board for testing and calibration laboratories) and CAP (College of American Pathologists).
+          <div class="mySlides2">
+            <q style="width: 100%; color: rgb(182, 176, 180)"
+              >e udiandae itaque rem. Corrupti explicabo labore blanditiis?</q
+            >
+            <p class="author2">- Ernest Hemingway</p>
+          </div>
 
-  </p>
-  <h4>The services we offer</h4>
-  <p>
-    As India’s leading digital healthcare platforms, your health is our utmost priority. Apart from facilitating pathological tests, Tata 1mg is your one-stop place for booking radiology tests such as MRIs and CT scans. Not just this, we also offer a free package of diabetes tests for members of the Diabetes Care Plan.<br><br><br>
+          <div class="mySlides2">
+            <p style="width: 100%; color: rgb(182, 176, 180)">
+              Lorem ipsum at voluptatum! Eveniet rerum maiores blanditiis quia
+              earum?
+            </p>
+            <p class="author2">- Thomas A. Edison</p>
+          </div>
 
-With a presence in cities like Delhi, Gurgaon, Noida, Mumbai, Pune, Hyderabad, Bangalore, Chennai, etc., through Tata 1mg, you can avail over 2,000 tests and get tested by 120+ top, verified labs at the best prices. You even have the option to compare tests and packages based on prices and lab ratings and choose accordingly.<br><br>
+          <a class="prev2" onclick="plusSlides(-1)">❮</a>
+          <a class="next2" onclick="plusSlides(1)">❯</a>
+        </div>
 
-Need help with lab test results? Talk to more than 20 kinds of specialists on Tata 1mg and get your results verified by them.<br><br>
+        <div class="dot-container2">
+          <span class="dot2" onclick="currentSlide(1)"></span>
+          <span class="dot2" onclick="currentSlide(2)"></span>
+          <span class="dot2" onclick="currentSlide(3)"></span>
+        </div>
 
-We have been making healthcare affordable and accessible since the day we started. We aim to bring care to health and continue doing so until everyone is well.<br><br>
+        <br />
+        <h1 id="H1CON">Want to books lab test in bulk?</h1>
+        <h4 id="H1CON" style="font-size: 1em">
+          get customized health packages at best prices
+        </h4>
+        <button
+          style="
+            text-align: center;
+            width: 12em;
+            height: 3em;
+            background-color: rgb(255, 92, 32);
+            position: relative;
+            left: 44%;
+            color: white;
+            border-radius: 1em;
+            border: none;
+          "
+        >
+          CONTACT US &rArr;
+        </button>
+      </div>
 
-Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists look into each order to give you a fulfilling experience.<br><br>
+      <div class="apk">
+        <div>
+          <img src="/lab-test/img//img.jpg" style="height: 30em" />
+        </div>
+        <div
+          style="
+            width: 50%;
+            height: 15em;
+            float: right;
+            position: relative;
+            top: -30em;
+          "
+        >
+          <p style="font-size: 2em"><b>Download the tata 1mg app</b></p>
+          <p style="color: rgb(182, 175, 150)">
+            Book diagnotics test inline with certified labs at best prices
+          </p>
+        </div>
+        <div
+          style="
+            width: 25%;
+            height: 15em;
+            float: right;
+            position: relative;
+            left: 25%;
+            top: -40%;
+          "
+        >
+          <img src="/lab-test//img//play.jpg" style="width: 70%" />
+        </div>
+        <div
+          style="
+            width: 25%;
+            height: 15em;
+            float: right;
+            position: relative;
+            left: 68%;
+            top: -40%;
+          "
+        >
+          <img src="/lab-test//img/apple.jpg" style="width: 70%" />
+        </div>
+      </div>
+    </div>
 
-Explore our labs now and book your tests today.<br><br>
-Stay Healthy!
+    <div
+      style="height: 58em; position: relative; top: 200em; width: 95%; left: 3%"
+    >
+      <h3>
+        Keep your health in check with Tata 1mg: Lab tests just a click away
+      </h3>
+      <br />
+      <p><b>Tata 1mg brings care to health</b></p>
+      <p>
+        Tata 1mg is India's leading digital healthcare platform. From ordering
+        medicines online to consulting doctors online, Tata 1mg is that one
+        place that aims to fulfill all your health needs within the comfort of
+        your home. In fact, you don’t even need to visit the diagnostic labs to
+        get tests done. Tata 1mg has got that covered too.
+      </p>
+      <h4>Tata 1mg: Lab tests now at your doorstep</h4>
+      <p>
+        Spending hours in a queue at a diagnostic lab or a hospital is now a
+        thing of the past. With more than 45,00,000 lab tests booked, Tata 1mg
+        labs is on a mission to give you a flawless healthcare experience by
+        bringing "care" to "health".<br /><br />
 
+        With Tata 1mg labs, you can choose the diagnostic lab of your preference
+        and get the hassle-free experience of a diagnostic center at the comfort
+        of your home.<br /><br />
 
-  </p>]
+        You can choose the diagnostic lab of your choice and get your lab tests
+        done at discounted prices with the quality of service kept intact.<br /><br />
 
-</div>
-</body>
+        Wondering how to book a lab test? It’s simple. You just need to search
+        and add your tests, select the lab of your choice and schedule your test
+        as per your suitable time slot. Once your test gets confirmed, a
+        phlebotomist will be assigned to collect a sample from your home.
+      </p>
+      <h4>Need more help?</h4>
+      <p>
+        Just give us a call (18002122323) and we will help you complete your
+        order.
+      </p>
+      <h4>Certified labs: For accessible and affordable experience</h4>
+      <p>
+        We partner with various recognized diagnostic labs to make sure that you
+        have a safe and smooth experience. To ensure quality and hygiene in
+        sample collection and high accuracy in results, we partner with labs
+        that are certified by international bodies like ISO (International
+        Organization for Standardization), NABL (National Accreditation Board
+        for testing and calibration laboratories) and CAP (College of American
+        Pathologists).
+      </p>
+      <h4>The services we offer</h4>
+      <p>
+        As India’s leading digital healthcare platforms, your health is our
+        utmost priority. Apart from facilitating pathological tests, Tata 1mg is
+        your one-stop place for booking radiology tests such as MRIs and CT
+        scans. Not just this, we also offer a free package of diabetes tests for
+        members of the Diabetes Care Plan.<br /><br /><br />
+
+        With a presence in cities like Delhi, Gurgaon, Noida, Mumbai, Pune,
+        Hyderabad, Bangalore, Chennai, etc., through Tata 1mg, you can avail
+        over 2,000 tests and get tested by 120+ top, verified labs at the best
+        prices. You even have the option to compare tests and packages based on
+        prices and lab ratings and choose accordingly.<br /><br />
+
+        Need help with lab test results? Talk to more than 20 kinds of
+        specialists on Tata 1mg and get your results verified by them.<br /><br />
+
+        We have been making healthcare affordable and accessible since the day
+        we started. We aim to bring care to health and continue doing so until
+        everyone is well.<br /><br />
+
+        Customer centricity is the core of our values. Our team of highly
+        trained and experienced doctors, phlebotomists and pharmacists look into
+        each order to give you a fulfilling experience.<br /><br />
+
+        Explore our labs now and book your tests today.<br /><br />
+        Stay Healthy!
+      </p>
+      ]
+    </div>
+
+    <script>
+      var slideIndexs = 1;
+      showSlides(slideIndexs);
+
+      function plusSlides(n) {
+        showSlides((slideIndexs += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndexs = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides2");
+        var dots = document.getElementsByClassName("dot2");
+        if (n > slides.length) {
+          slideIndexs = 1;
+        }
+        if (n < 1) {
+          slideIndexs = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active2", "");
+        }
+        slides[slideIndexs - 1].style.display = "block";
+        dots[slideIndexs - 1].className += " active2";
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/36a6b3689e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
