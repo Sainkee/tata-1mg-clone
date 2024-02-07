@@ -36,7 +36,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="font-sans leading-[1.42857143]">
+  <body class="font-sans leading-[1.42857143] relative">
     <nav
       class="hidden md:flex items-center justify-between text-base font-semibold p-4 border-b-2 flex-wrap relative"
     >
@@ -2615,6 +2615,122 @@
         </div>
       </section>
     </footer>
+
+    <!-- mobile -->
+    <section
+      class="text-gray-600 w-[75%] fixed top-0 left-[-100%] bg-beige h-[100vh] overflow-y-scroll transition-all duration-300 min-h-[100vh]"
+      id="sideMenu"
+    >
+      <div class="flex justify-between items-center p-5">
+        <div class="flex gap-4">
+          <img src="/dist/landingpage/mobile/user.svg" alt="user" />
+          <div>
+            <p class="font-bold text-lg">Hi, there!</p>
+            <p class="text-[0.9em]">Login / Signup</p>
+          </div>
+        </div>
+
+        <i class="fa-solid fa-xmark" id="cross"></i>
+      </div>
+      <div class="border-b-2 w-full mx-auto py-2"></div>
+      <ul class="px-5 py-2 gap-y-2">
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/1.svg" alt="" /></span> Buy
+          medicines
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/2.svg" alt="" /></span> Buy health
+          products
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/3.svg" alt="" /></span> Book lab
+          tests
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/4.svg" alt="" /></span> Consult a
+          doctor
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/5.svg" alt="" /></span> 1mg Care
+          Plan
+        </li>
+      </ul>
+      <div class="border-b-2 w-full mx-auto py-2"></div>
+      <ul class="px-5 py-2 gap-y-2">
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/7.svg" alt="" /></span> Ayurveda
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/8.svg" alt="" /></span> Hindi
+          articles
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/9.svg" alt="" /></span> Offers
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/10.svg" alt="" /></span> All
+          diseases
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/11.svg" alt="" /></span> All
+          medicines
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <span><img src="landingpage/mobile/12.svg" alt="" /></span> Medicines
+          by therapeutic class
+        </li>
+      </ul>
+      <div class="border-b-2 w-full mx-auto py-2"></div>
+      <ul class="px-5 py-2 gap-y-2">
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <img src="landingpage/mobile/13.svg" alt="" /> Contact us
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <img src="landingpage/mobile/14.svg" alt="" /> Need help?
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <img src="landingpage/mobile/15.svg" alt="" /> Privacy policy
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <img src="landingpage/mobile/16.svg" alt="" /> Return policy
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <img src="landingpage/mobile/17.svg" alt="" /> Terms and conditions
+        </li>
+        <li class="flex items-center gap-2 cursor-pointer p-2">
+          <img src="landingpage/mobile/18.svg" alt="" /> Editorial policy
+        </li>
+      </ul>
+      <div class="border-b-2 w-full mx-auto py-2"></div>
+      <div>
+        <div class="flex items-center gap-10">
+          <div class="w-[50%]">
+            <img class="w-full" src="landingpage/mobile/mobile.webp" alt="" />
+          </div>
+          <span class="font-bold">
+            Get more features! Download the app now</span
+          >
+        </div>
+        <ul class="px-5 text-sm">
+          <li class="flex items-center gap-1 py-.5">
+            <img src="landingpage/mobile/tick-green.svg" alt="" /> Medicine
+            Reminders
+          </li>
+          <li class="flex items-center gap-1 py-.5">
+            <img src="landingpage/mobile/tick-green.svg" alt="" />
+            Monthly/weekly subscriptions
+          </li>
+          <li class="flex items-center gap-1 py-.5">
+            <img src="landingpage/mobile/tick-green.svg" alt="" /> Health
+            records and analysis
+          </li>
+          <li class="flex items-center gap-1 py-.5">
+            <img src="landingpage/mobile/tick-green.svg" alt="" /> 24*7
+            Emergency services
+          </li>
+        </ul>
+      </div>
+    </section>
     <!------------------------------------ scripts------------------------------ -->
     <script
       src="https://kit.fontawesome.com/36a6b3689e.js"
@@ -2765,6 +2881,14 @@
         } else {
           hide.id = "hide";
         }
+      });
+      let sideMenu = document.getElementById("sideMenu");
+      document.getElementById("metaMenu").addEventListener("click", () => {
+        sideMenu.style.left = "0";
+      });
+
+      document.getElementById("cross").addEventListener("click", () => {
+        sideMenu.style.left = "-100%";
       });
     </script>
   </body>

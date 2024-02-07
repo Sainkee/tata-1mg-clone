@@ -544,12 +544,24 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.left-\[-100\%\] {
+  left: -100%;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .mx-auto {
@@ -607,8 +619,16 @@ video {
   height: 2rem;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-full {
   height: 100%;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
 }
 
 .w-16 {
@@ -627,12 +647,20 @@ video {
   width: 40%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .w-\[6rem\] {
   width: 6rem;
 }
 
 .w-\[70\%\] {
   width: 70%;
+}
+
+.w-\[75\%\] {
+  width: 75%;
 }
 
 .w-\[80\%\] {
@@ -759,6 +787,14 @@ video {
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .text-wrap {
@@ -944,6 +980,10 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[0\.9em\] {
+  font-size: 0.9em;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1042,8 +1082,18 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .delay-0 {
   transition-delay: 0s;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .navLink li:hover {
@@ -1225,6 +1275,10 @@ h6 {
 
 .slider2 .slick-list .slick-slide {
   margin: 0 5px;
+}
+
+.overflow-auto::-webkit-scrollbar {
+  display: none;
 }
 
 .hover\:text-primary:hover {

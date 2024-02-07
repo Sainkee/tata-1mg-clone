@@ -161,3 +161,7 @@ h6 {
 .slider2 .slick-list .slick-slide {
   margin: 0 5px;
 }
+
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
