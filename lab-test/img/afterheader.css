@@ -1,0 +1,419 @@
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none; }
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 50%;
+  max-width: 1000px;
+  position: relative;
+  top: 4em;
+    left: 10em;
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+position: relative;
+    top: 2em;
+    left: 25em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+   
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.div{
+    background-color: beige;
+    height: 35.25em;
+    
+}
+
+.d1{
+    width: 50%;
+    
+    height: inherit;
+    
+    position:absolute;
+    top: .5em;
+    left: 50%;
+}
+#h1{
+    position: absolute;
+    font-size:1.7em;
+    top: 1.5em;
+    padding-left: 1em;
+}
+#perad1{
+    position: relative;
+    top: 5em;
+    font-size:1.3em ;
+    padding-left: 1.2em;
+}
+#divmiddleselection{
+   
+    width: 40%;
+    left: 52%;
+    height:10.25em;
+    position: relative;
+    top: -10em;
+    
+}
+#md1{
+    border-right: 1px solid beige;
+    width: 20%;
+    height: inherit;
+    float: inline-start;
+}
+#imgdivmid{
+    width: 90%;
+    padding-left:2em;   
+}
+#pmd{
+    text-align: center;
+}
+.howbook-div{
+    
+    position: absolute;
+    left: 97%;
+    top: 12em;
+    
+}
+.divbuttun{
+    position: absolute;
+   
+   top: 12rem;
+    width: 50%;
+    height:3rem ;
+}
+#button{
+    color: white;
+    background-color: rgb(255, 92, 32);
+    height: inherit;
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: .5EM;
+}
+/*profile css*/
+.prdiv{
+    background-color: white;
+    width: 80%;
+    position: relative;
+    border: 1px solid beige; 
+    height: 20em;
+    left: 10%;
+    top: -4em;
+}
+#fstdiv{
+    height: inherit;
+    
+    width: 50%;
+}
+#span{
+    height: 2rem;
+    border: 5px solid black;
+}
+#imgprd{
+   height: 2em;
+margin: 2em;
+   padding-left: 1em;
+    
+
+}
+#imgpr{
+    height: 2em;
+   
+      
+}
+
+
+.grid-container {
+    top: 7em;
+    left: 3em;
+    position: absolute;
+    display: grid;
+    row-gap: 30px;
+    grid-template-rows: auto auto auto;
+    
+    
+  }
+  
+  .grid-item {
+    
+    
+    
+    font-size: 14px;
+    
+  }
+  
+.grid-container2 {
+  top: 7em;
+  left: 25%;
+  position: absolute;
+  display: grid;
+  row-gap: 30px;
+  grid-template-rows: auto auto auto;
+  
+  }
+  #scnddiv{
+    border-left: 1px solid beige;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    width: 50%;
+    height: inherit;
+  }
+.grid-container3{
+  top: 7em;
+  left: 3em;
+  position: absolute;
+  display: grid;
+  row-gap: 30px;
+  grid-template-rows: auto auto auto;
+}
+
+.grid-container4{
+  top: 7em;
+  left: 50%;
+  position: absolute;
+  display: grid;
+  row-gap: 30px;
+  grid-template-rows: auto auto auto;
+}
+.button{
+  color: orange;
+  background-color: white;
+  width: 20em;
+  height: 4em;
+  border-radius: 3em;
+  position: absolute;
+  top: 22em;
+  left:41%;
+}
+.check{
+ 
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  height: 45em;
+}
+.flex-container {
+  display: flex;
+ flex-direction: row;
+}
+
+.flex-container > div {
+ 
+  width: 2.9em;
+
+  text-align: center;
+margin: none;
+  padding: none;
+  font-size: 3em;
+
+}
+.g{background-color: white;
+  border-radius: 2em;
+  height: 2.3em;
+  width: 10em;
+}
+
+.g2{background-color: white;
+  border-radius: 2em;
+  height: 2.3em;
+  width: 9em;
+}
+
+.g1{background-color: white;
+  border-radius: 2em;
+  height: 2.3em;
+  width: 6em;
+  
+}
+
+.g:hover{
+  scale: 1.5;
+  border-radius: 2em;
+  height: 2.3em;
+  width: 11em;
+  background-color:  rgb(252, 114, 35);
+}
+
+
+.g2:hover{
+  scale: 1.5;
+  border-radius: 2em;
+  height: 2.3em;
+  width: 9em;
+  background-color:  rgb(252, 114, 35);
+}
+
+.g1:hover{background-color: rgb(255, 114, 35);
+  scale: 1.5;
+  border-radius: 2em;
+  height: 2.3em;
+  width: 6em;
+  color: white;
+}
+.fst{
+  border: 1px solid rgb(204, 197, 197);
+  width: 78%;
+  height: 33em;
+}
+#list{
+  top: -2em;
+  position: relative;
+  font-size: .9em;
+   padding-left: .6em;
+   color: rgb(182, 176, 180);
+}
+#buttun{
+  text-align: center;
+  width: 23em;
+  height: 3.3em;
+  position: relative;
+  top: -1em;
+  left: 1.5em;
+  background-color:rgb(252, 114, 35);
+  color: white;
+  border-radius: 1em ;
+}
+.flex-container2{
+ display: grid; 
+ flex-direction: row;
+ grid-gap:3em ;
+ grid-template-columns:auto auto auto;
+}
+.you-tube{
+  height: 38em;
+  width: 95%;
+  
+}
+#ydiv1{
+  width: 50%;
+}
+#ydiv2{
+  position: relative;
+  left: 5em;
+  top: -16em;
+  width: 50%;
+  float: right;
+}
+.crouserdiv1{
+  width: 100%;
+
+ background-color: beige;
+  height: 45em;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container2 {
+  position: relative;
+  height: em;
+  background:beige;
+}
+
+/* Slides */
+.mySlides2 {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #f56d38;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  position: absolute;
+  right: 0;
+ 
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container2 {
+    text-align: center;
+    padding: 20px;
+    background:beige;
+}
+
+/* The dots/bullets/indicators */
+.dot2{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: beige;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active2, .dot2:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author2 {color: rgb(3, 3, 3);}
+
+#H1CON{
+text-align: center;
+font-size: 2em;
+}
+.apk{
+  width: 80%;
+  height: 30em;
+  
+}
