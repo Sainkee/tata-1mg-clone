@@ -599,6 +599,14 @@ video {
   margin-top: 1.5rem;
 }
 
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -681,6 +689,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .min-w-6 {
@@ -810,6 +822,10 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-2 {
@@ -1134,7 +1150,8 @@ video {
   margin-left: 2px;
 }
 
-.mega-menu {
+.mega-menu,
+.mega-menu2 {
   display: none;
   font-size: 0.8rem;
 }
@@ -1145,19 +1162,29 @@ video {
   }
 }
 
-.mega-menu {
+.list2:hover {
+  .mega-menu2 {
+    display: block;
+    right: 0;
+  }
+}
+
+.mega-menu,
+.mega-menu2 {
   background-color: white;
   border-radius: 4px;
   z-index: 1;
 }
 
-.mega-menu ul li {
+.mega-menu ul li,
+.mega-menu2 ul li {
   text-transform: capitalize;
   padding-left: 1em;
   margin-bottom: 0.5em;
 }
 
-.mega-menu ul:not(:first-child) {
+.mega-menu ul:not(:first-child),
+.mega-menu2 ul:not(:first-child) {
   border-left: 1px solid rgba(193, 192, 192, 0.618);
 }
 

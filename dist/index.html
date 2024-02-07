@@ -36,27 +36,27 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="font-sans leading-[1.42857143] relative">
+  <body class="relative font-sans leading-[1.42857143]">
     <nav
-      class="hidden md:flex items-center justify-between text-base font-semibold p-4 border-b-2 flex-wrap relative"
+      class="relative hidden flex-wrap items-center justify-between border-b-2 p-4 text-base font-semibold md:flex"
     >
-      <div class="flex justify-between items-center">
+      <div class="flex items-center justify-between">
         <div class="pr-4">
           <img src="landingpage/tata_1mg_logo.svg" alt="Tata1mg" />
         </div>
         <ul
-          class="flex justify-center text-[0.8rem] items-center gap-5 navLink"
+          class="navLink flex items-center justify-center gap-5 text-[0.8rem]"
         >
           <li>
             <a href="">Medicine</a>
           </li>
           <li class="">
-            <a href="" class="flex items-center">
+            <a href="./Lab_Test.html" class="flex items-center">
               Lab Tests
               <div class="relative flex h-8 w-16">
                 <!-- Layer 1: Ping Animation -->
                 <div
-                  class="animate-ping absolute h-full w-full rounded-md"
+                  class="absolute h-full w-full animate-ping rounded-md"
                   style="
                     background-color: hsl(5, 100%, 69%);
                     opacity: 0.75;
@@ -66,7 +66,7 @@
 
                 <!-- Layer 2: Pink Circle -->
                 <div
-                  class="animate-ping absolute h-8 w-16 rounded-md"
+                  class="absolute h-8 w-16 animate-ping rounded-md"
                   style="
                     background-color: hsl(5, 100%, 69%);
                     opacity: 0.75;
@@ -75,9 +75,9 @@
                 ></div>
 
                 <!-- Layer 3: Text-Centered Rectangle -->
-                <div class="p-2 flex items-center justify-center">
+                <div class="flex items-center justify-center p-2">
                   <span
-                    class="relative bg-primary delay-0 w-full px-2 text-center text-white flex items-center justify-center rounded-md"
+                    class="relative flex w-full items-center justify-center rounded-md bg-primary px-2 text-center text-white delay-0"
                   >
                     SAFE
                   </span>
@@ -98,14 +98,14 @@
             <a href="" class="flex items-center">
               Care Plan
 
-              <span class="text-white px-2 ml-1 rounded-md bg-primary"
+              <span class="ml-1 rounded-md bg-primary px-2 text-white"
                 >SAVE MORE</span
               >
             </a>
           </li>
         </ul>
       </div>
-      <div class="flex justify-between min-w-6 gap-5 items-center text-center">
+      <div class="flex min-w-6 items-center justify-between gap-5 text-center">
         <i class="fa-regular fa-user"></i>
         <a href="">Offer</a>
         <i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i>
@@ -113,8 +113,8 @@
       <a href="">Need Help?</a>
     </nav>
     <!-- for mobile design -->
-    <header class="flex md:hidden justify-between items-center p-5">
-      <div class="flex gap-10 items-center">
+    <header class="flex items-center justify-between p-5 md:hidden">
+      <div class="flex items-center gap-10">
         <a id="metaMenu" class="text-3xl" href="#">&#9776;</a>
         <img src="landingpage/tata_1mg_logo.svg" alt="Tata1mg" />
       </div>
@@ -122,10 +122,10 @@
         <i class="fa-solid fa-cart-shopping fa-flip-horizontal text-xl"></i>
       </div>
     </header>
-    <div class="md:hidden border-b-2 w-full mx-auto"></div>
+    <div class="mx-auto w-full border-b-2 md:hidden"></div>
     <!-- nav end -->
 
-    <div class="md:hidden searchBar px-5 mb-6">
+    <div class="searchBar mb-6 px-5 md:hidden">
       <div class="flex items-center justify-between">
         <div class="flex items-center py-5">
           <i class="fa-solid fa-location-dot"></i>
@@ -133,7 +133,7 @@
           <select
             id="cities"
             name="cities"
-            class="px-2 py-1 min-w-full focus:outline-none"
+            class="min-w-full px-2 py-1 focus:outline-none"
           >
             <option value="kolkata">Kolkata</option>
             <option value="mumbai">Mumbai</option>
@@ -169,10 +169,10 @@
           </select>
         </div>
       </div>
-      <div class="flex border-2 rounded-md py-2 items-center">
+      <div class="flex items-center rounded-md border-2 py-2">
         <input
           type="text"
-          class="search-input px-2 py-1 focus:outline-none min-w-[30%] w-full"
+          class="search-input w-full min-w-[30%] px-2 py-1 focus:outline-none"
           placeholder="Search Medicines... "
         />
         <div class="search-icon -translate-x-5">
@@ -182,17 +182,17 @@
     </div>
     <!-- for mobile design end -->
 
-    <div class="hidden md:block border-b-2">
-      <div class="flex items-center p-4 w-full justify-between">
-        <div class="flex items-center gap-2 w-[50%]">
-          <div class="bg-slate-200 flex items-center justify-between px-4">
+    <div class="hidden border-b-2 md:block">
+      <div class="flex w-full items-center justify-between p-4">
+        <div class="flex w-[50%] grow items-center gap-2">
+          <div class="flex items-center justify-between bg-slate-200 px-4">
             <div class="flex items-center">
               <i class="fa-solid fa-location-dot"></i>
               <label for="cities"></label>
               <select
                 id="cities"
                 name="cities"
-                class="px-2 py-1 bg-slate-200 focus:outline-none"
+                class="bg-slate-200 px-2 py-1 focus:outline-none"
               >
                 <option value="kolkata">Kolkata</option>
                 <option value="mumbai">Mumbai</option>
@@ -228,10 +228,10 @@
             </div>
             <i class="fa fa-location"></i>
           </div>
-          <div class="w-[50%]">
+          <div class="w-[70%]">
             <input
               type="text"
-              class="search-input py-1 bg-slate-200 focus:outline-none w-[100%] grow"
+              class="search-input w-[100%] grow bg-slate-200 py-1 focus:outline-none"
               placeholder="Search for Medicines and Health Product"
             />
           </div>
@@ -242,10 +242,10 @@
           </div>
         </div>
 
-        <div class="flex items-center gap-2 grow w-[30%] justify-end">
+        <div class="flex w-[30%] grow items-center justify-end gap-2">
           <i class="fa-solid fa-bolt" style="color: #b197fc"></i>
           <span class="text-wrap">QUICK BUY! Get 15% off on medicines*</span>
-          <button class="bg-primary px-4 py-2 rounded-md text-white">
+          <button class="rounded-md bg-primary px-4 py-2 text-white">
             Quick order
           </button>
         </div>
@@ -253,12 +253,12 @@
     </div>
     <!-- searchbar end -->
 
-    <section class="hidden md:flex megaDropDown w-full py-4">
+    <section class="megaDropDown hidden w-full py-4 md:flex">
       <ul
-        class="flex items-center justify-around gap-5 mx-auto relative flex-wrap"
+        class="relative mx-auto flex flex-wrap items-center justify-around gap-5"
       >
         <li class="list1">
-          <div class="flex justify-evenly items-center relative megaMenu1">
+          <div class="megaMenu1 relative flex items-center justify-evenly">
             <a class="hover:text-primary" href="">Health Resource Center</a>
             <i class="fa fa-angle-down drop hover:text-primary"></i>
           </div>
@@ -287,14 +287,14 @@
         </li>
 
         <li class="list1">
-          <div class="flex justify-evenly items-center relative megaMenu1">
+          <div class="megaMenu1 relative flex items-center justify-evenly">
             <a class="hover:text-primary" href="">Vitamin & Nutrition</a>
             <i class="fa fa-angle-down drop hover:text-primary"></i>
           </div>
 
           <div class="mega-menu absolute">
             <div class="flex justify-center">
-              <div class="menu-column p-4 flex flex-row gap-4">
+              <div class="menu-column flex flex-row gap-4 p-4">
                 <ul class="cursor-pointer">
                   <li class="font-semibold hover:text-primary">
                     <a href="">Vitamin & Supplements</a>
@@ -522,13 +522,13 @@
         </li>
 
         <li class="list1">
-          <div class="flex justify-evenly items-center">
+          <div class="flex items-center justify-evenly">
             <a class="hover:text-primary" href="">Personal Care</a>
             <i class="fa fa-angle-down drop hover:text-primary"></i>
           </div>
           <div class="mega-menu absolute">
             <div class="flex justify-center">
-              <div class="menu-column p-4 flex flex-row gap-4">
+              <div class="menu-column flex flex-row gap-4 p-4">
                 <ul class="cursor-pointer">
                   <li class="font-semibold hover:text-primary">
                     <a href="">sextual wellness</a>
@@ -754,15 +754,15 @@
           </div>
         </li>
 
-        <li class="list1">
-          <div class="flex justify-evenly items-center relative megaMenu1">
+        <li class="list2">
+          <div class="megaMenu1 relative flex items-center justify-evenly">
             <a class="hover:text-primary" href="">Healthcare Devices</a>
             <i class="fa fa-angle-down drop hover:text-primary"></i>
           </div>
 
-          <div class="mega-menu absolute">
+          <div class="mega-menu2 absolute">
             <div class="flex justify-center">
-              <div class="menu-column p-4 flex flex-row gap-4">
+              <div class="menu-column flex flex-row gap-4 p-4">
                 <ul class="">
                   <li class=" ">
                     <a class="font-semibold hover:text-primary" href="#"
@@ -978,15 +978,15 @@
           </div>
         </li>
 
-        <li class="list1">
-          <div class="flex justify-evenly items-center relative megaMenu1">
+        <li class="list2">
+          <div class="megaMenu1 relative flex items-center justify-evenly">
             <a class="hover:text-primary" href="">Ayurveda Products</a>
             <i class="fa fa-angle-down drop hover:text-primary"></i>
           </div>
 
-          <div class="mega-menu absolute">
+          <div class="mega-menu2 absolute">
             <div class="flex justify-center">
-              <div class="menu-column p-4 flex flex-row gap-4">
+              <div class="menu-column flex flex-row gap-4 p-4">
                 <ul class="">
                   <li class=" ">
                     <a class="font-semibold hover:text-primary" href="#"
@@ -1145,13 +1145,13 @@
             </div>
           </div>
         </li>
-        <li class="list1">
-          <div class="flex justify-evenly items-center relative megaMenu1">
+        <li class="list2">
+          <div class="megaMenu1 relative flex items-center justify-evenly">
             <a class="hover:text-primary" href="">Diabetes</a>
             <i class="fa fa-angle-down drop hover:text-primary"></i>
           </div>
 
-          <div class="mega-menu absolute">
+          <div class="mega-menu2 absolute">
             <div class="flex justify-center">
               <div class="menu-column p-4">
                 <ul class="">
@@ -1204,15 +1204,15 @@
           </div>
         </li>
 
-        <li class="list1">
-          <div class="flex justify-evenly items-center relative megaMenu1">
+        <li class="list2">
+          <div class="megaMenu1 relative flex items-center justify-evenly">
             <a class="hover:text-primary" href="">Health Conditions</a>
             <i class="fa fa-angle-down drop hover:text-primary"></i>
           </div>
 
-          <div class="mega-menu absolute">
+          <div class="mega-menu2 absolute">
             <div class="flex justify-center">
-              <div class="menu-column p-4 flex flex-row gap-4">
+              <div class="menu-column flex flex-row gap-4 p-4">
                 <ul class="">
                   <li class=" ">
                     <a class="font-semibold hover:text-primary" href="#"
@@ -1384,15 +1384,15 @@
             </div>
           </div>
         </li>
-        <li class="list1">
-          <div class="flex justify-evenly items-center relative megaMenu1">
+        <li class="list2">
+          <div class="megaMenu1 relative flex items-center justify-evenly">
             <a class="hover:text-primary" href="">Homeopathy</a>
             <i class="fa fa-angle-down drop hover:text-primary"></i>
           </div>
 
-          <div class="mega-menu absolute">
+          <div class="mega-menu2 absolute">
             <div class="flex justify-center">
-              <div class="menu-column p-4 flex flex-row gap-4">
+              <div class="menu-column flex flex-row gap-4 p-4">
                 <ul class="">
                   <li class=" ">
                     <a class="font-semibold hover:text-primary" href="#"
@@ -1536,15 +1536,15 @@
             </div>
           </div>
         </li>
-        <li class="list1">
-          <div class="flex justify-evenly items-center relative megaMenu1">
+        <li class="list2">
+          <div class="megaMenu1 relative flex items-center justify-evenly">
             <a class="hover:text-primary" href="">Featured</a>
             <i class="fa fa-angle-down drop hover:text-primary"></i>
           </div>
 
-          <div class="mega-menu absolute">
+          <div class="mega-menu2 absolute">
             <div class="flex justify-center">
-              <div class="menu-column p-4 flex flex-row gap-4">
+              <div class="menu-column flex flex-row gap-4 p-4">
                 <ul class="">
                   <li class=" ">
                     <a class="font-semibold hover:text-primary" href="#"
@@ -1702,19 +1702,19 @@
         <img
           src="landingpage/diagnostics_2024-02_1706768182_1948x800-2.webp"
           alt=""
-          class="w-full sideimg"
+          class="sideimg w-full"
         />
       </div>
     </section>
 
-    <section class="text-center border-b-2 pb-10 tagline mt-6 md:mt-0">
-      <span class="text-xl md:text-2xl text-gray-600"
+    <section class="tagline mt-6 border-b-2 pb-10 text-center md:mt-0">
+      <span class="text-xl text-gray-600 md:text-2xl"
         >Tata 1mg: India’s Leading Online Pharmacy & Healthcare Platform
       </span>
     </section>
     <!-- banner -->
-    <section class="banner pt-5 md:py-10 bg-offwhite">
-      <div class="w-[80%] mx-auto">
+    <section class="banner bg-offwhite pt-5 md:py-10">
+      <div class="mx-auto w-[80%]">
         <img src="landingpage/banner.webp" alt="banner" />
       </div>
     </section>
@@ -1722,11 +1722,11 @@
     <section class="bg-offwhite">
       <div class="mx-auto">
         <div class="bg-offwhite">
-          <div class="flex justify-between w-[80%] mx-auto py-5">
-            <p class="text-xl bg-offwhite">Shop by health concerns</p>
+          <div class="mx-auto flex w-[80%] justify-between py-5">
+            <p class="bg-offwhite text-xl">Shop by health concerns</p>
           </div>
-          <div class="bg-white w-full shadow-lg">
-            <ul class="multiple-items w-[80%] mx-auto text-center py-10">
+          <div class="w-full bg-white shadow-lg">
+            <ul class="multiple-items mx-auto w-[80%] py-10 text-center">
               <li>
                 <img src="landingpage/product1/diabetes.webp" alt="Diabetes" />
                 <p class="pt-2">Diabetes</p>
@@ -1777,188 +1777,188 @@
             </ul>
           </div>
           <!-- see more section -->
-          <div class="flex justify-between w-[80%] mx-auto py-5">
-            <p class="text-xl bg-offwhite">Full body health checkups</p>
+          <div class="mx-auto flex w-[80%] justify-between py-5">
+            <p class="bg-offwhite text-xl">Full body health checkups</p>
             <span
-              class="bg-primary text-white rounded-md py-1 px-2 cursor-pointer"
+              class="cursor-pointer rounded-md bg-primary px-2 py-1 text-white"
               >See All</span
             >
           </div>
           <!-- slid-2 -->
           <div class="w-full bg-white py-10 shadow-md">
             <ul
-              class="slider2 w-[80%] mx-auto text-center bg-white"
+              class="slider2 mx-auto w-[80%] bg-white text-center"
               id="product"
             >
               <li class="ww-[80%] bg-white">
-                <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
                   <span
                     >Good Health
                     <span class="hidden md:block"> Platinum Pack</span></span
                   >
-                  <span class="flex bg-safe gap-1 p-1 text-sm">
+                  <span class="flex gap-1 bg-safe p-1 text-sm">
                     <img src="landingpage/product2/safe_bjisiz.svg" alt="" />
                     <span>SAFE</span>
                   </span>
                 </div>
-                <div class="flex gap-10 rate">
+                <div class="rate flex gap-10">
                   <div class="">
                     <span> &#x20B9;</span>
                     <span class="line-through"> 1099</span>
                   </div>
                   <div
-                    class="text-green-400 border-1 border-dashed border-green-600 bg-green-100"
+                    class="border-1 border-dashed border-green-600 bg-green-100 text-green-400"
                   >
                     50% off
                   </div>
                 </div>
               </li>
               <li class="w-[80%] bg-white">
-                <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
                   <span
                     >Good Health
                     <span class="hidden md:block"> Platinum Pack</span></span
                   >
-                  <span class="flex bg-safe gap-1 p-1 text-sm">
+                  <span class="flex gap-1 bg-safe p-1 text-sm">
                     <img src="landingpage/product2/safe_bjisiz.svg" alt="" />
                     <span>SAFE</span>
                   </span>
                 </div>
-                <div class="flex gap-10 rate">
+                <div class="rate flex gap-10">
                   <div class="">
                     <span> &#x20B9;</span>
                     <span class="line-through"> 1099</span>
                   </div>
-                  <div class="text-green-400 bg-green-100">50% off</div>
+                  <div class="bg-green-100 text-green-400">50% off</div>
                 </div>
               </li>
               <li class="w-[80%] bg-white">
-                <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
                   <span
                     >Good Health
                     <span class="hidden md:block"> Platinum Pack</span></span
                   >
-                  <span class="flex bg-safe gap-1 p-1 text-sm">
+                  <span class="flex gap-1 bg-safe p-1 text-sm">
                     <img src="landingpage/product2/safe_bjisiz.svg" alt="" />
                     <span>SAFE</span>
                   </span>
                 </div>
-                <div class="flex gap-10 rate">
+                <div class="rate flex gap-10">
                   <div class="">
                     <span> &#x20B9;</span>
                     <span class="line-through"> 1099</span>
                   </div>
-                  <div class="text-green-400 bg-green-100">50% off</div>
+                  <div class="bg-green-100 text-green-400">50% off</div>
                 </div>
               </li>
               <li class="w-[80%] bg-white">
-                <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
                   <span
                     >Good Health
                     <span class="hidden md:block"> Platinum Pack</span></span
                   >
-                  <span class="flex bg-safe gap-1 p-1 text-sm">
+                  <span class="flex gap-1 bg-safe p-1 text-sm">
                     <img src="landingpage/product2/safe_bjisiz.svg" alt="" />
                     <span>SAFE</span>
                   </span>
                 </div>
-                <div class="flex gap-10 rate">
+                <div class="rate flex gap-10">
                   <div class="">
                     <span> &#x20B9;</span>
                     <span class="line-through"> 1099</span>
                   </div>
-                  <div class="text-green-400 bg-green-100">50% off</div>
+                  <div class="bg-green-100 text-green-400">50% off</div>
                 </div>
               </li>
               <li class="w-[80%] bg-white">
-                <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
                   <span
                     >Good Health
                     <span class="hidden md:block"> Platinum Pack</span></span
                   >
-                  <span class="flex bg-safe gap-1 p-1 text-sm">
+                  <span class="flex gap-1 bg-safe p-1 text-sm">
                     <img src="landingpage/product2/safe_bjisiz.svg" alt="" />
                     <span>SAFE</span>
                   </span>
                 </div>
-                <div class="flex gap-10 rate">
+                <div class="rate flex gap-10">
                   <div class="">
                     <span> &#x20B9;</span>
                     <span class="line-through"> 1099</span>
                   </div>
-                  <div class="text-green-400 bg-green-100">50% off</div>
+                  <div class="bg-green-100 text-green-400">50% off</div>
                 </div>
               </li>
               <li class="w-[80%] bg-white">
-                <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
                   <span
                     >Good Health
                     <span class="hidden md:block"> Platinum Pack</span></span
                   >
-                  <span class="flex bg-safe gap-1 p-1 text-sm">
+                  <span class="flex gap-1 bg-safe p-1 text-sm">
                     <img src="landingpage/product2/safe_bjisiz.svg" alt="" />
                     <span>SAFE</span>
                   </span>
                 </div>
-                <div class="flex gap-10 rate">
+                <div class="rate flex gap-10">
                   <div class="">
                     <span> &#x20B9;</span>
                     <span class="line-through"> 1099</span>
                   </div>
-                  <div class="text-green-400 bg-green-100">50% off</div>
+                  <div class="bg-green-100 text-green-400">50% off</div>
                 </div>
               </li>
               <li class="w-[80%] bg-white">
-                <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
                   <span
                     >Good Health
                     <span class="hidden md:block"> Platinum Pack</span></span
                   >
-                  <span class="flex bg-safe gap-1 p-1 text-sm">
+                  <span class="flex gap-1 bg-safe p-1 text-sm">
                     <img src="landingpage/product2/safe_bjisiz.svg" alt="" />
                     <span>SAFE</span>
                   </span>
                 </div>
-                <div class="flex gap-10 rate">
+                <div class="rate flex gap-10">
                   <div class="">
                     <span> &#x20B9;</span>
                     <span class="line-through"> 1099</span>
                   </div>
-                  <div class="text-green-400 bg-green-100">50% off</div>
+                  <div class="bg-green-100 text-green-400">50% off</div>
                 </div>
               </li>
               <li class="w-[80%] bg-white">
-                <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
                   <span
                     >Good Health
                     <span class="hidden md:block"> Platinum Pack</span></span
                   >
-                  <span class="flex bg-safe gap-1 p-1 text-sm">
+                  <span class="flex gap-1 bg-safe p-1 text-sm">
                     <img src="landingpage/product2/safe_bjisiz.svg" alt="" />
                     <span>SAFE</span>
                   </span>
                 </div>
-                <div class="flex gap-10 rate">
+                <div class="rate flex gap-10">
                   <div class="">
                     <span> &#x20B9;</span>
                     <span class="line-through"> 1099</span>
                   </div>
-                  <div class="text-green-400 bg-green-100">50% off</div>
+                  <div class="bg-green-100 text-green-400">50% off</div>
                 </div>
               </li>
             </ul>
           </div>
 
-          <div class="flex justify-between w-[80%] mx-auto py-5">
-            <p class="text-xl bg-offwhite">Featured brands</p>
+          <div class="mx-auto flex w-[80%] justify-between py-5">
+            <p class="bg-offwhite text-xl">Featured brands</p>
             <span
-              class="bg-primary text-white rounded-md py-1 px-2 cursor-pointer"
+              class="cursor-pointer rounded-md bg-primary px-2 py-1 text-white"
               >See All</span
             >
           </div>
           <!-- slid3 -->
-          <div class="bg-white w-full shadow-lg">
-            <ul class="slid3 multiple-items w-[80%] mx-auto text-center py-10">
+          <div class="w-full bg-white shadow-lg">
+            <ul class="slid3 multiple-items mx-auto w-[80%] py-10 text-center">
               <li>
                 <img
                   src="landingpage/product3/diagnostics_2024-02_1707110020_Mamaearth.webp"
@@ -2007,30 +2007,30 @@
             </ul>
           </div>
 
-          <div class="flex justify-between w-[80%] mx-auto py-5">
-            <p class="text-xl bg-offwhite">
+          <div class="mx-auto flex w-[80%] justify-between py-5">
+            <p class="bg-offwhite text-xl">
               Ashwagandha | supplement of the week
             </p>
             <span
-              class="bg-primary text-white rounded-md py-1 px-2 cursor-pointer"
+              class="cursor-pointer rounded-md bg-primary px-2 py-1 text-white"
               >See All</span
             >
           </div>
 
           <!-- slid4 -->
 
-          <div class="bg-white w-full shadow-lg">
-            <ul class="slid4 w-[80%] mx-auto py-10">
+          <div class="w-full bg-white shadow-lg">
+            <ul class="slid4 mx-auto w-[80%] py-10">
               <li>
                 <img src="landingpage/product4/1.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2041,14 +2041,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/2.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2059,14 +2059,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/3.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2077,14 +2077,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/4.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2095,14 +2095,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/5.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2113,14 +2113,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/6.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2131,14 +2131,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/8.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2149,14 +2149,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/9.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2167,14 +2167,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/11.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2185,14 +2185,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/12.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2203,14 +2203,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/113.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2221,14 +2221,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/14.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2239,14 +2239,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/15.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2257,14 +2257,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/16" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2275,14 +2275,14 @@
               </li>
               <li>
                 <img src="landingpage/product4/17.webp" />
-                <div class="text-start px-2">
+                <div class="px-2 text-start">
                   <p>
                     Himalya
                     <span class="hidden md:block">wellness Pure Hearbs</span>
                     Ashwagandha
                   </p>
-                  <p class="text-xs text-gray-500 my-1">packet Of 60 tablets</p>
-                  <p class="text-xs mb-2">
+                  <p class="my-1 text-xs text-gray-500">packet Of 60 tablets</p>
+                  <p class="mb-2 text-xs">
                     <span class="text-gray-500">Delivery by</span> Tomorrow
                   </p>
                   <p class="text-xs">
@@ -2297,7 +2297,7 @@
       </div>
     </section>
     <!------------------------------- paragraph ------------------------------------->
-    <section class="bg-dull paragraph p-8">
+    <section class="paragraph bg-dull p-8">
       <div class="leading-relaxed">
         <h4 class="text-xl font-semibold">
           Stay Healthy with Tata 1mg: Your Favourite Online Pharmacy and
@@ -2395,45 +2395,45 @@
 
     <!------------------------------------ footer------------------------------ -->
     <footer class="w-full">
-      <div class="shadow-mid py-8 w-full">
-        <div class="mx-auto text-center px-4 md:px-[20%]">
+      <div class="w-full py-8 shadow-mid">
+        <div class="mx-auto px-4 text-center md:px-[20%]">
           <h2 class="text-2xl">INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
           <div class="flex justify-between py-8">
             <div>
-              <div class="font-bold text-3xl">260m+</div>
+              <div class="text-3xl font-bold">260m+</div>
               <div class="pt-1">Visitors</div>
             </div>
             <div>
-              <div class="font-bold text-3xl">31m+</div>
+              <div class="text-3xl font-bold">31m+</div>
               <div class="pt-1">Orders Delivered</div>
             </div>
             <div>
-              <div class="font-bold text-3xl">1800+</div>
+              <div class="text-3xl font-bold">1800+</div>
               <div class="pt-1">Cities</div>
             </div>
           </div>
         </div>
-        <div class="border-b-2 w-[90%] mx-auto py-2"></div>
+        <div class="mx-auto w-[90%] border-b-2 py-2"></div>
 
         <div
-          class="flex flex-col md:flex-row items-center justify-center text-center gap-4 py-4 w-full"
+          class="flex w-full flex-col items-center justify-center gap-4 py-4 text-center md:flex-row"
         >
           <div class="text-lg">Get the link to download App</div>
           <div
-            class="flex md:flex-row gap-2 p-4 items-center mx-auto w-full md:w-[40%]"
+            class="mx-auto flex w-full items-center gap-2 p-4 md:w-[40%] md:flex-row"
           >
             <div class="w-[60%] grow">
               <input
                 type="tel"
                 name="phone"
                 id=""
-                class="bg-slate-200 focus:outline-none px-4 w-full py-2"
+                class="w-full bg-slate-200 px-4 py-2 focus:outline-none"
                 placeholder="Enter Phone Number"
               />
             </div>
 
             <div>
-              <button class="bg-primary p-2 px-4 rounded-md text-white">
+              <button class="rounded-md bg-primary p-2 px-4 text-white">
                 Send Link
               </button>
             </div>
@@ -2441,7 +2441,7 @@
         </div>
       </div>
       <div
-        class="flex footerLinks justify-start md:justify-around bg-beige flex-wrap"
+        class="footerLinks flex flex-wrap justify-start bg-beige md:justify-around"
       >
         <div class="">
           <h5 class="">Know Us</h5>
@@ -2485,48 +2485,48 @@
           <ul>
             <li><p>Social Links</p></li>
             <li
-              class="grid grid-cols-6 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-2 py-1"
+              class="grid grid-cols-6 gap-2 py-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6"
             >
               <a href="">
                 <div
-                  class="facebook w-8 h-8"
+                  class="facebook h-8 w-8"
                   style="background-image: url(landingpage/facebook.svg)"
                 ></div>
               </a>
               <a href="">
                 <div
-                  class="facebook w-8 h-8"
+                  class="facebook h-8 w-8"
                   style="background-image: url(landingpage/insta.svg)"
                 ></div>
               </a>
               <a href="">
                 <div
-                  class="facebook w-8 h-8"
+                  class="facebook h-8 w-8"
                   style="background-image: url(landingpage/in.svg)"
                 ></div>
               </a>
               <a href="">
                 <div
-                  class="facebook w-8 h-8"
+                  class="facebook h-8 w-8"
                   style="background-image: url(landingpage/tweet.svg)"
                 ></div>
               </a>
               <a href="">
                 <div
-                  class="facebook w-8 h-8"
+                  class="facebook h-8 w-8"
                   style="background-image: url(landingpage/yt.svg)"
                 ></div>
               </a>
               <a href="">
                 <div
-                  class="facebook w-8 h-8"
+                  class="facebook h-8 w-8"
                   style="background-image: url(landingpage/onem.svg)"
                 ></div>
               </a>
             </li>
             <li><p>Want daily dose of health?</p></li>
             <li class="mt-2">
-              <button class="bg-primary text-white rounded-md px-4 py-2">
+              <button class="rounded-md bg-primary px-4 py-2 text-white">
                 SIGN UP
               </button>
             </li>
@@ -2546,12 +2546,12 @@
           </ul>
         </div>
       </div>
-      <div class="border-b-2 w-[90%] mx-auto py-2 bg-beige"></div>
-      <div class="mx-auto py-2 bg-beige"></div>
-      <div class="py-10 bg-beige">
-        <div class="w-[80%] flex mx-auto justify-between">
-          <div class="flex md:flex-row flex-col items-center">
-            <div class="flex justify-center min-w-[33%] w-full">
+      <div class="mx-auto w-[90%] border-b-2 bg-beige py-2"></div>
+      <div class="mx-auto bg-beige py-2"></div>
+      <div class="bg-beige py-10">
+        <div class="mx-auto flex w-[80%] justify-between">
+          <div class="flex flex-col items-center md:flex-row">
+            <div class="flex w-full min-w-[33%] justify-center">
               <img
                 class=""
                 src="landingpage/secure-rebrand_x6f8yq.svg"
@@ -2559,38 +2559,38 @@
               />
             </div>
             <div class="">
-              <h4 class="font-bold text-center text-lg md:text-3xl">
+              <h4 class="text-center text-lg font-bold md:text-3xl">
                 Reliable
               </h4>
-              <p class="text-sm text-gray-500 my-2">
+              <p class="my-2 text-sm text-gray-500">
                 All products displayed on Tata 1mg are procured from verified
                 and licensed pharmacies. All labs listed on the platform are
                 accredited
               </p>
             </div>
           </div>
-          <div class="flex md:flex-row flex-col items-center">
-            <div class="flex justify-center min-w-[33%]">
+          <div class="flex flex-col items-center md:flex-row">
+            <div class="flex min-w-[33%] justify-center">
               <img src="landingpage/reliable-rebrand_rcpof3.svg" alt="" />
             </div>
             <div>
-              <h4 class="font-bold text-lg md:text-3xl text-center">Secure</h4>
-              <p class="text-sm text-gray-500 my-2">
+              <h4 class="text-center text-lg font-bold md:text-3xl">Secure</h4>
+              <p class="my-2 text-sm text-gray-500">
                 Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and
                 is Payment Card Industry Data Security Standard (PCI DSS)
                 compliant
               </p>
             </div>
           </div>
-          <div class="flex md:flex-row flex-col md:justify-start items-center">
+          <div class="flex flex-col items-center md:flex-row md:justify-start">
             <div class="min-w-[33%]">
               <img src="landingpage/affordable-rebrand_ivgidq.svg" alt="" />
             </div>
             <div>
-              <h4 class="font-bold text-lg md:text-3xl text-center">
+              <h4 class="text-center text-lg font-bold md:text-3xl">
                 Affordable
               </h4>
-              <p class="text-sm text-gray-500 my-2">
+              <p class="my-2 text-sm text-gray-500">
                 Find affordable medicine substitutes, save up to 50% on health
                 products, up to 80% off on lab tests and free doctor
                 consultations.
@@ -2598,9 +2598,9 @@
             </div>
           </div>
         </div>
-        <div class="border-b-2 w-[90%] mx-auto py-2 bg-beige"></div>
+        <div class="mx-auto w-[90%] border-b-2 bg-beige py-2"></div>
         <div class="text-center">
-          <div class="flex justify-center py-6 gap-12">
+          <div class="flex justify-center gap-12 py-6">
             <div class="w-[6rem]">
               <img class="h-full w-full" src="landingpage/certi.png" alt="" />
             </div>
@@ -2619,16 +2619,16 @@
         </div>
       </div>
       <section class="footerData">
-        <div class="py-4 bg-beige">
+        <div class="bg-beige py-4">
           <div
-            class="border-2 py-4 px-10 flex items-center justify-between font-bold cursor-pointer contentshow"
+            class="contentshow flex cursor-pointer items-center justify-between border-2 px-10 py-4 font-bold"
           >
             <a href="">Know more about Tata 1mg</a>
             <i class="fa fa-angle-down drop"></i>
           </div>
           <div
             id="hide"
-            class="px-10 py-4 [&>p]:my-2 [&>*]:leading-loose [&>p]:text-sm [&>p]:text-gray-600 [&>h5]:font-semibold text-lg content"
+            class="content px-10 py-4 text-lg [&>*]:leading-loose [&>h5]:font-semibold [&>p]:my-2 [&>p]:text-sm [&>p]:text-gray-600"
           >
             <h5>Access medical and health information</h5>
             <p>
@@ -2664,7 +2664,7 @@
         </div>
       </section>
       <section class="w-full">
-        <div class="mx-auto flex justify-center items-center px-[50px]">
+        <div class="mx-auto flex items-center justify-center px-[50px]">
           <div class="text-center text-gray-400">
             © 2024 Tata 1mg. All rights reserved. All medicines are dispensed
             in compliance with the Drugs and Cosmetics Act, 1940 and Drugs and
@@ -2680,90 +2680,90 @@
 
     <!-- mobile  side menu-->
     <section
-      class="text-gray-600 w-[75%] fixed top-0 left-[-100%] bg-beige h-[100vh] max-[375px]:h-[120vh] overflow-y-scroll transition-all duration-300 min-h-[100vh]"
+      class="fixed left-[-100%] top-0 h-[100vh] min-h-[100vh] w-[75%] overflow-y-scroll bg-beige text-gray-600 transition-all duration-300 max-[375px]:h-[120vh]"
       id="sideMenu"
     >
-      <div class="flex justify-between items-center p-5">
+      <div class="flex items-center justify-between p-5">
         <div class="flex gap-4">
           <img src="landingpage/mobile/user.svg" alt="user" />
           <div>
-            <p class="font-bold text-lg">Hi, there!</p>
+            <p class="text-lg font-bold">Hi, there!</p>
             <p class="text-[0.9em]">Login / Signup</p>
           </div>
         </div>
 
         <i class="fa-solid fa-xmark" id="cross"></i>
       </div>
-      <div class="border-b-2 w-full mx-auto py-2"></div>
-      <ul class="px-5 py-2 gap-y-2">
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+      <div class="mx-auto w-full border-b-2 py-2"></div>
+      <ul class="gap-y-2 px-5 py-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/1.svg" alt="" /></span> Buy
           medicines
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/2.svg" alt="" /></span> Buy health
           products
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/3.svg" alt="" /></span> Book lab
           tests
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/4.svg" alt="" /></span> Consult a
           doctor
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/5.svg" alt="" /></span> 1mg Care
           Plan
         </li>
       </ul>
-      <div class="border-b-2 w-full mx-auto py-2"></div>
-      <ul class="px-5 py-2 gap-y-2">
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+      <div class="mx-auto w-full border-b-2 py-2"></div>
+      <ul class="gap-y-2 px-5 py-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/7.svg" alt="" /></span> Ayurveda
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/8.svg" alt="" /></span> Hindi
           articles
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/9.svg" alt="" /></span> Offers
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/10.svg" alt="" /></span> All
           diseases
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/11.svg" alt="" /></span> All
           medicines
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <span><img src="landingpage/mobile/12.svg" alt="" /></span> Medicines
           by therapeutic class
         </li>
       </ul>
-      <div class="border-b-2 w-full mx-auto py-2"></div>
-      <ul class="px-5 py-2 gap-y-2">
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+      <div class="mx-auto w-full border-b-2 py-2"></div>
+      <ul class="gap-y-2 px-5 py-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <img src="landingpage/mobile/13.svg" alt="" /> Contact us
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <img src="landingpage/mobile/14.svg" alt="" /> Need help?
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <img src="landingpage/mobile/15.svg" alt="" /> Privacy policy
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <img src="landingpage/mobile/16.svg" alt="" /> Return policy
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <img src="landingpage/mobile/17.svg" alt="" /> Terms and conditions
         </li>
-        <li class="flex items-center gap-2 cursor-pointer p-2">
+        <li class="flex cursor-pointer items-center gap-2 p-2">
           <img src="landingpage/mobile/18.svg" alt="" /> Editorial policy
         </li>
       </ul>
-      <div class="border-b-2 w-full mx-auto py-2"></div>
+      <div class="mx-auto w-full border-b-2 py-2"></div>
       <div>
         <div class="flex items-center gap-10 p-5">
           <div class="w-[20%]">
@@ -2774,19 +2774,19 @@
           >
         </div>
         <ul class="px-5 text-sm">
-          <li class="flex items-center gap-1 py-.5">
+          <li class="py-.5 flex items-center gap-1">
             <img src="landingpage/mobile/tick-green.svg" alt="" /> Medicine
             Reminders
           </li>
-          <li class="flex items-center gap-1 py-.5">
+          <li class="py-.5 flex items-center gap-1">
             <img src="landingpage/mobile/tick-green.svg" alt="" />
             Monthly/weekly subscriptions
           </li>
-          <li class="flex items-center gap-1 py-.5">
+          <li class="py-.5 flex items-center gap-1">
             <img src="landingpage/mobile/tick-green.svg" alt="" /> Health
             records and analysis
           </li>
-          <li class="flex items-center gap-1 py-.5">
+          <li class="py-.5 flex items-center gap-1">
             <img src="landingpage/mobile/tick-green.svg" alt="" /> 24*7
             Emergency services
           </li>
