@@ -2851,6 +2851,9 @@ video {
   forced-color-adjust: none;
 }
 
+.\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {
+  a-z-a--z0-9: \\-\\. $;
+}
 
 .navLink li:hover {
   color: #ff6e61;
