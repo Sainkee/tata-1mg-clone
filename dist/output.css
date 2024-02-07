@@ -679,6 +679,22 @@ video {
   width: 100%;
 }
 
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
 .min-w-6 {
   min-width: 1.5rem;
 }
@@ -697,6 +713,10 @@ video {
 
 .min-w-full {
   min-width: 100%;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .-translate-x-10 {
@@ -746,6 +766,10 @@ video {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -960,6 +984,10 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-center {

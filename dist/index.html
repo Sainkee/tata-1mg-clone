@@ -41,9 +41,11 @@
       class="hidden md:flex items-center justify-between text-base font-semibold p-4 border-b-2 flex-wrap relative"
     >
       <div class="flex justify-between items-center">
-        <img src="landingpage/tata_1mg_logo.svg" alt="Tata1mg" />
+        <div class="pr-4">
+          <img src="landingpage/tata_1mg_logo.svg" alt="Tata1mg" />
+        </div>
         <ul
-          class="flex justify-center text-[0.8rem] items-center gap-4 navLink px-4"
+          class="flex justify-center text-[0.8rem] items-center gap-5 navLink"
         >
           <li>
             <a href="">Medicine</a>
@@ -181,10 +183,8 @@
     <!-- for mobile design end -->
 
     <div class="hidden md:block border-b-2">
-      <div
-        class="search-container flex items-center p-4 justify-between w-full"
-      >
-        <div class="flex items-center gap-2 w-[70%]">
+      <div class="flex items-center p-4 w-full justify-between">
+        <div class="flex items-center gap-2 w-[50%]">
           <div class="bg-slate-200 flex items-center justify-between px-4">
             <div class="flex items-center">
               <i class="fa-solid fa-location-dot"></i>
@@ -197,23 +197,52 @@
                 <option value="kolkata">Kolkata</option>
                 <option value="mumbai">Mumbai</option>
                 <option value="delhi">Delhi</option>
-                <!-- Add more cities as needed -->
+                <option value="bangalore">Bangalore</option>
+                <option value="chennai">Chennai</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="pune">Pune</option>
+                <option value="ahmedabad">Ahmedabad</option>
+                <option value="surat">Surat</option>
+                <option value="jaipur">Jaipur</option>
+                <option value="lucknow">Lucknow</option>
+                <option value="kanpur">Kanpur</option>
+                <option value="nagpur">Nagpur</option>
+                <option value="patna">Patna</option>
+                <option value="indore">Indore</option>
+                <option value="thane">Thane</option>
+                <option value="bhopal">Bhopal</option>
+                <option value="visakhapatnam">Visakhapatnam</option>
+                <option value="vadodara">Vadodara</option>
+                <option value="firozabad">Firozabad</option>
+                <option value="ludhiana">Ludhiana</option>
+                <option value="ranchi">Ranchi</option>
+                <option value="ahmednagar">Ahmednagar</option>
+                <option value="vijayawada">Vijayawada</option>
+                <option value="allahabad">Allahabad</option>
+                <option value="jamshedpur">Jamshedpur</option>
+                <option value="amritsar">Amritsar</option>
+                <option value="bhubaneswar">Bhubaneswar</option>
+                <option value="aurangabad">Aurangabad</option>
+                <option value="rourkela">Rourkela</option>
               </select>
             </div>
             <i class="fa fa-location"></i>
           </div>
-          <input
-            type="text"
-            class="search-input py-1 bg-slate-200 focus:outline-none min-w-[30%] w-[70%]"
-            placeholder="Search for Medicines and Health Product"
-          />
-          <div class="search-icon">
+          <div class="w-[50%]">
+            <input
+              type="text"
+              class="search-input py-1 bg-slate-200 focus:outline-none w-[100%] grow"
+              placeholder="Search for Medicines and Health Product"
+            />
+          </div>
+          <div class="search-icon -translate-x-10">
             <i
-              class="fa fa-search bg-slate-200 px-2 py-1 -translate-x-10 focus:outline-none"
+              class="fa fa-search bg-slate-200 px-2 py-1 focus:outline-none"
             ></i>
           </div>
         </div>
-        <div class="flex items-center gap-2">
+
+        <div class="flex items-center gap-2 grow w-[30%] justify-end">
           <i class="fa-solid fa-bolt" style="color: #b197fc"></i>
           <span class="text-wrap">QUICK BUY! Get 15% off on medicines*</span>
           <button class="bg-primary px-4 py-2 rounded-md text-white">
@@ -2390,8 +2419,10 @@
           class="flex flex-col md:flex-row items-center justify-center text-center gap-4 py-4 w-full"
         >
           <div class="text-lg">Get the link to download App</div>
-          <div class="flex md:flex-row gap-2 items-center w-[40%]">
-            <div class="w-[80%]">
+          <div
+            class="flex md:flex-row gap-2 p-4 items-center mx-auto w-full md:w-[40%]"
+          >
+            <div class="w-[60%] grow">
               <input
                 type="tel"
                 name="phone"
