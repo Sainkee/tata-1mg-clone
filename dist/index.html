@@ -45,7 +45,7 @@
   </head>
   <body class="font-sans leading-[1.42857143]">
     <nav
-      class="flex items-center justify-between text-base font-semibold p-4 border-b-2 flex-wrap relative"
+      class="hidden md:flex items-center justify-between text-base font-semibold p-4 border-b-2 flex-wrap relative"
     >
       <div class="flex justify-between items-center">
         <img src="landingpage/tata_1mg_logo.svg" alt="Tata1mg" />
@@ -115,9 +115,51 @@
       </div>
       <a href="">Need Help?</a>
     </nav>
+
+    <header class="flex md:hidden justify-between items-center p-5">
+      <div class="flex gap-10 items-center">
+        <a id="metaMenu" class="text-3xl" href="#">&#9776;</a>
+        <img src="landingpage/tata_1mg_logo.svg" alt="Tata1mg" />
+      </div>
+      <div>
+        <i class="fa-solid fa-cart-shopping fa-flip-horizontal text-xl"></i>
+      </div>
+    </header>
+    <div class="md:hidden border-b-2 w-full mx-auto"></div>
     <!-- nav end -->
 
-    <div class="border-b-2">
+    <div class="md:hidden searchBar px-5">
+      <div class="flex items-center justify-between px-4 min-w-[20%] gap-x-2">
+        <div class="flex items-center py-5">
+          <i class="fa-solid fa-location-dot"></i>
+          <label for="cities"></label>
+          <select
+            id="cities"
+            name="cities"
+            class="px-2 py-1 min-w-full focus:outline-none"
+          >
+            <option value="kolkata">Kolkata</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="delhi">Delhi</option>
+            <!-- Add more cities as needed -->
+          </select>
+        </div>
+      </div>
+      <div class="flex border-2 rounded-md py-2 items-center">
+        <input
+          type="text"
+          class="search-input px-2 py-1 focus:outline-none min-w-[30%] w-full"
+          placeholder="Search for Medicines and Health Product"
+        />
+        <div class="search-icon">
+          <i
+            class="fa fa-search px-2 py-1 -translate-x-5 focus:outline-none"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden md:block border-b-2">
       <div
         class="search-container flex items-center p-4 justify-between w-full"
       >
