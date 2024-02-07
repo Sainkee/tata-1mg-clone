@@ -42,7 +42,9 @@
     >
       <div class="flex justify-between items-center">
         <img src="landingpage/tata_1mg_logo.svg" alt="Tata1mg" />
-        <ul class="flex justify-between text-center items-center navLink">
+        <ul
+          class="flex justify-center text-[0.8rem] items-center gap-4 navLink px-4"
+        >
           <li>
             <a href="">Medicine</a>
           </li>
@@ -122,7 +124,7 @@
     <!-- nav end -->
 
     <div class="md:hidden searchBar px-5 mb-6">
-      <div class="flex items-center justify-between px-4 min-w-[20%] gap-x-2">
+      <div class="flex items-center justify-between px-4 gap-x-2">
         <div class="flex items-center py-5">
           <i class="fa-solid fa-location-dot"></i>
           <label for="cities"></label>
@@ -134,6 +136,33 @@
             <option value="kolkata">Kolkata</option>
             <option value="mumbai">Mumbai</option>
             <option value="delhi">Delhi</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="chennai">Chennai</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="pune">Pune</option>
+            <option value="ahmedabad">Ahmedabad</option>
+            <option value="surat">Surat</option>
+            <option value="jaipur">Jaipur</option>
+            <option value="lucknow">Lucknow</option>
+            <option value="kanpur">Kanpur</option>
+            <option value="nagpur">Nagpur</option>
+            <option value="patna">Patna</option>
+            <option value="indore">Indore</option>
+            <option value="thane">Thane</option>
+            <option value="bhopal">Bhopal</option>
+            <option value="visakhapatnam">Visakhapatnam</option>
+            <option value="vadodara">Vadodara</option>
+            <option value="firozabad">Firozabad</option>
+            <option value="ludhiana">Ludhiana</option>
+            <option value="ranchi">Ranchi</option>
+            <option value="ahmednagar">Ahmednagar</option>
+            <option value="vijayawada">Vijayawada</option>
+            <option value="allahabad">Allahabad</option>
+            <option value="jamshedpur">Jamshedpur</option>
+            <option value="amritsar">Amritsar</option>
+            <option value="bhubaneswar">Bhubaneswar</option>
+            <option value="aurangabad">Aurangabad</option>
+            <option value="rourkela">Rourkela</option>
             <!-- Add more cities as needed -->
           </select>
         </div>
@@ -144,10 +173,8 @@
           class="search-input px-2 py-1 focus:outline-none min-w-[30%] w-full"
           placeholder="Search Medicines... "
         />
-        <div class="search-icon">
-          <i
-            class="fa fa-search px-2 py-1 -translate-x-5 focus:outline-none"
-          ></i>
+        <div class="search-icon -translate-x-5">
+          <i class="fa fa-search px-2 py-1 focus:outline-none"></i>
         </div>
       </div>
     </div>
@@ -158,16 +185,14 @@
         class="search-container flex items-center p-4 justify-between w-full"
       >
         <div class="flex items-center gap-2 w-[70%]">
-          <div
-            class="bg-slate-200 flex items-center justify-between px-4 min-w-[20%] gap-x-2"
-          >
+          <div class="bg-slate-200 flex items-center justify-between px-4">
             <div class="flex items-center">
               <i class="fa-solid fa-location-dot"></i>
               <label for="cities"></label>
               <select
                 id="cities"
                 name="cities"
-                class="px-2 py-1 bg-slate-200 min-w-full focus:outline-none"
+                class="px-2 py-1 bg-slate-200 focus:outline-none"
               >
                 <option value="kolkata">Kolkata</option>
                 <option value="mumbai">Mumbai</option>
@@ -179,7 +204,7 @@
           </div>
           <input
             type="text"
-            class="search-input px-2 py-1 bg-slate-200 focus:outline-none min-w-[30%] w-full"
+            class="search-input py-1 bg-slate-200 focus:outline-none min-w-[30%] w-[70%]"
             placeholder="Search for Medicines and Health Product"
           />
           <div class="search-icon">
@@ -188,7 +213,7 @@
             ></i>
           </div>
         </div>
-        <div class="flex items-center gap-2 ml-2">
+        <div class="flex items-center gap-2">
           <i class="fa-solid fa-bolt" style="color: #b197fc"></i>
           <span class="text-wrap">QUICK BUY! Get 15% off on medicines*</span>
           <button class="bg-primary px-4 py-2 rounded-md text-white">
@@ -2384,7 +2409,9 @@
           </div>
         </div>
       </div>
-      <div class="flex footerLinks justify-around bg-beige">
+      <div
+        class="flex footerLinks justify-start md:justify-around bg-beige flex-wrap"
+      >
         <div class="">
           <h5 class="">Know Us</h5>
           <ul>
@@ -2427,7 +2454,7 @@
           <ul>
             <li><p>Social Links</p></li>
             <li
-              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-2 py-1"
+              class="grid grid-cols-6 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-2 py-1"
             >
               <a href="">
                 <div
@@ -2501,7 +2528,9 @@
               />
             </div>
             <div class="">
-              <h4 class="font-bold text-center text-3xl">Reliable</h4>
+              <h4 class="font-bold text-center text-lg md:text-3xl">
+                Reliable
+              </h4>
               <p class="text-sm text-gray-500 my-2">
                 All products displayed on Tata 1mg are procured from verified
                 and licensed pharmacies. All labs listed on the platform are
@@ -2514,7 +2543,7 @@
               <img src="landingpage/reliable-rebrand_rcpof3.svg" alt="" />
             </div>
             <div>
-              <h4 class="font-bold text-3xl text-center">Secure</h4>
+              <h4 class="font-bold text-lg md:text-3xl text-center">Secure</h4>
               <p class="text-sm text-gray-500 my-2">
                 Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and
                 is Payment Card Industry Data Security Standard (PCI DSS)
@@ -2527,7 +2556,9 @@
               <img src="landingpage/affordable-rebrand_ivgidq.svg" alt="" />
             </div>
             <div>
-              <h4 class="font-bold text-3xl text-center">Affordable</h4>
+              <h4 class="font-bold text-lg md:text-3xl text-center">
+                Affordable
+              </h4>
               <p class="text-sm text-gray-500 my-2">
                 Find affordable medicine substitutes, save up to 50% on health
                 products, up to 80% off on lab tests and free doctor
@@ -2616,9 +2647,9 @@
       </section>
     </footer>
 
-    <!-- mobile -->
+    <!-- mobile  side menu-->
     <section
-      class="text-gray-600 w-[75%] fixed top-0 left-[-100%] bg-beige h-[100vh] overflow-y-scroll transition-all duration-300 min-h-[100vh]"
+      class="text-gray-600 w-[75%] fixed top-0 left-[-100%] bg-beige h-[100vh] max-[375px]:h-[120vh] overflow-y-scroll transition-all duration-300 min-h-[100vh]"
       id="sideMenu"
     >
       <div class="flex justify-between items-center p-5">
@@ -2703,8 +2734,8 @@
       </ul>
       <div class="border-b-2 w-full mx-auto py-2"></div>
       <div>
-        <div class="flex items-center gap-10">
-          <div class="w-[50%]">
+        <div class="flex items-center gap-10 p-5">
+          <div class="w-[20%]">
             <img class="w-full" src="landingpage/mobile/mobile.webp" alt="" />
           </div>
           <span class="font-bold">
@@ -2885,6 +2916,7 @@
       let sideMenu = document.getElementById("sideMenu");
       document.getElementById("metaMenu").addEventListener("click", () => {
         sideMenu.style.left = "0";
+        // document.body.style.backdropFilter = "blur(10px)";
       });
 
       document.getElementById("cross").addEventListener("click", () => {

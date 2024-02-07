@@ -5,9 +5,7 @@
 .navLink li:hover {
   color: #ff6e61;
 }
-.navLink li {
-  padding: 0% 1em;
-}
+
 .navLink li a {
   text-transform: uppercase;
   font-weight: 700;
@@ -162,6 +160,6 @@ h6 {
   margin: 0 5px;
 }
 
-.overflow-auto::-webkit-scrollbar {
+#sideMenu::-webkit-scrollbar {
   display: none;
 }
