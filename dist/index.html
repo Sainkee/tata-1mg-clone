@@ -8,6 +8,10 @@
       1mg.com
     </title>
 
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+
     <!-- tailwind output style sheet -->
 
     <link rel="stylesheet" href="output.css" />
@@ -107,10 +111,12 @@
       </div>
       <div
         class="flex items-center justify-between gap-5 text-center text-sm text-gray-600"
-      >
-        <div>Login | Sign Up</div>
+       >
+        <div  >Login | Sign Up</div>
         <a href="">Offer</a>
-        <i class="fa-solid fa-cart-shopping fa-flip-horizontal fa-2xl"></i>
+        <i  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="3000" class="fa-solid fa-cart-shopping fa-flip-horizontal fa-2xl"></i>
       </div>
       <a class="text-gray-600" href="">Need Help?</a>
     </nav>
@@ -1670,7 +1676,7 @@
 
     <!-- banner carousal -->
     <section class="slider flex w-full md:flex-row">
-      <div class="single-item w-full md:w-[60%]">
+      <div class="single-item w-full md:w-[60%]" data-aos="zoom-in" data-aos-duration="1500">
         <div class="carousel-cell sect1-img">
           <img src="landingpage/slider-1.jpg" alt="" />
         </div>
@@ -1700,7 +1706,7 @@
           <img src="landingpage/slider-10.png" alt="" />
         </div>
       </div>
-      <div class="w-full md:w-[40%]">
+      <div class="w-full md:w-[40%]" data-aos="zoom-out-left" data-aos-duration="1500">
         <img
           src="landingpage/diagnostics_2024-02_1706768182_1948x800-2.webp"
           alt=""
@@ -1715,19 +1721,19 @@
       </span>
     </section>
     <!-- banner -->
-    <section class="banner bg-offwhite pt-5 md:py-10">
-      <div class="mx-auto w-[80%]">
+    <section class="banner bg-offwhite pt-5 md:py-10 " data-aos="zoom-in" data-aos-duration="2000"> 
+      <div class="mx-auto w-[80%] ">
         <img src="landingpage/banner.webp" alt="banner" />
       </div>
     </section>
     <!-- slider products -->
-    <section class="bg-offwhite">
+    <section class="bg-offwhite" >
       <div class="mx-auto">
         <div class="bg-offwhite">
           <div class="mx-auto flex w-[80%] justify-between py-5">
             <p class="bg-offwhite text-xl">Shop by health concerns</p>
           </div>
-          <div class="w-full bg-white shadow-lg">
+          <div class="w-full bg-white shadow-lg" data-aos="zoom-out-right" data-aos-duration="2000">
             <ul class="multiple-items mx-auto w-[80%] py-10 text-center">
               <li>
                 <img src="landingpage/product1/diabetes.webp" alt="Diabetes" />
@@ -1787,7 +1793,7 @@
             >
           </div>
           <!-- slid-2 -->
-          <div class="w-full bg-white py-10 shadow-md">
+          <div class="w-full bg-white py-10 shadow-md"  data-aos="zoom-out-left" data-aos-duration="2000">
             <ul
               class="slider2 mx-auto w-[80%] bg-white text-center"
               id="product"
@@ -1959,7 +1965,8 @@
             >
           </div>
           <!-- slid3 -->
-          <div class="w-full bg-white shadow-lg">
+          <div class="w-full bg-white shadow-lg" data-aos="fade-up"
+          data-aos-duration="2000">
             <ul class="slid3 multiple-items mx-auto w-[80%] py-10 text-center">
               <li>
                 <img
@@ -2021,8 +2028,8 @@
 
           <!-- slid4 -->
 
-          <div class="w-full bg-white shadow-lg">
-            <ul class="slid4 mx-auto w-[80%] py-10">
+          <div class="w-full bg-white shadow-lg" >
+            <ul class="slid4 mx-auto w-[80%] py-10"data-aos="flip-right" data-aos-duration="1500">
               <li>
                 <img src="landingpage/product4/1.webp" />
                 <div class="px-2 text-start">
@@ -2402,7 +2409,7 @@
 
         <div
           class="flex w-full flex-col items-center justify-center gap-4 py-4 text-center "
-        >
+          data-aos="zoom-in-up">
           <div class="text-lg">Get the link to download App</div>
           <div
             class="mx-auto flex w-full items-center gap-2 p-4 md:w-[40%] md:flex-row"
@@ -2939,5 +2946,10 @@
         sideMenu.style.left = "-100%";
       });
     </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </body>
 </html>
