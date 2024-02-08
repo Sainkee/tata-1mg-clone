@@ -173,3 +173,15 @@ h6 {
 #sideMenu::-webkit-scrollbar {
   display: none;
 }
+
+@media screen and (max-width: 320px) {
+  .slick-prev {
+   
+    left: -35px !important; /* Adjust left position */
+  }
+  
+  .slick-next {
+ 
+    right: 20px; /* Adjust right position */
+  }
+}

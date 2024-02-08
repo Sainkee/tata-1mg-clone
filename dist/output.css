@@ -721,8 +721,9 @@ video {
   margin: 0.25rem;
 }
 
-.m-2 {
-  margin: 0.5rem;
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mx-auto {
@@ -738,11 +739,6 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .mb-2 {
@@ -763,14 +759,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .box-border {
@@ -3062,6 +3050,18 @@ h6 {
 
 #sideMenu::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .slick-prev {
+    left: -35px !important;
+    /* Adjust left position */
+  }
+
+  .slick-next {
+    right: 20px;
+    /* Adjust right position */
+  }
 }
 
 @media (min-width: 640px) {
