@@ -424,7 +424,7 @@ embed,
 object {
   display: block;
   /* 1 */
-   ;
+  vertical-align: middle;
   /* 2 */
 }
 
@@ -721,6 +721,10 @@ video {
   margin: 0.25rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -734,6 +738,11 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mb-2 {
@@ -754,6 +763,14 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .box-border {
@@ -2851,6 +2868,9 @@ video {
   forced-color-adjust: none;
 }
 
+.\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {
+  a-z-a--z0-9: \\-\\. $;
+}
 
 .navLink li:hover {
   color: #ff6e61;
@@ -2927,7 +2947,7 @@ h6 {
 }
 
 .footerLinks {
-  padding: 2em 4em;
+  padding: 2em;
 }
 
 .footerLinks h5 {
@@ -3187,6 +3207,11 @@ h6 {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
