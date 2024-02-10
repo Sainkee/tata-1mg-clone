@@ -103,15 +103,15 @@ Throughout our project development, we encountered various challenges and obstac
 ## Website UI Explanation:
 **1. Home Page UI**
 
-![Screenshot 1](screenshots/1.png)
+![Screenshot 1](https://github.com/Sainkee/tata-1mg-clone/blob/main/dist/screenshots/1.png)
 
-![Screenshot 2](screenshots/2.png)
+![Screenshot 2](https://github.com/Sainkee/tata-1mg-clone/blob/main/dist/screenshots/2.png)
 
-![Screenshot 3](screenshots/3.png)
+![Screenshot 3](https://github.com/Sainkee/tata-1mg-clone/blob/main/dist/screenshots/3.png)
 
-![Screenshot 4](screenshots/4.png)
+![Screenshot 4](https://github.com/Sainkee/tata-1mg-clone/blob/main/dist/screenshots/4.png)
 
-![Screenshot 5](screenshots/5.png)
+![Screenshot 5](https://github.com/Sainkee/tata-1mg-clone/blob/main/dist/screenshots/5.png)
 
 The UI of our Tata 1MG Clone faithfully replicates the design and functionality of the original platform, offering users a seamless experience for accessing health-related services, products, and information.
 
