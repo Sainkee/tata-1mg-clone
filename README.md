@@ -1,5 +1,5 @@
 # https://sainkee.github.io/tata-1mg-clone/dist/
-# TATA 1MG Clone Project by Group 7
+# TATA 1MG Clone Project 
 
 ### Welcome to the Tata 1MG Clone Project! This project aims to replicate the Tata 1MG website, providing users with a platform for accessing health-related services, products, and information. In this README, you'll find detailed information about our project.
 
